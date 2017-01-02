@@ -12,11 +12,10 @@ cd $DIR
 echo -e "a.out\n*.swp\n~*\n_betty-s\n_betty-d\n" >> .gitignore
 #Create the files
 touch $(grep File: $INPUT | cut -d \> -f3 | cut -d \< -f1)
-# Find all files that end in .py and copy the template into them. For all other files that do not have .py extension, copy #!/bin/bash into them.
 echo '#!/usr/bin/python3' > py_template
 echo '#!/bin/bash' > sh_template
-find . -type f -empty -exec cp sh_template '{}' \;
-find . -type f -name "*.py" -exec cp py_template '{}' \;
+find . -type f -empty -exec cp sh_template '{}' \; -exec chmod u+x '{}' \;
+find . -type f -name "*.py" -exec cp py_template '{}' \; -exec chmod u+x '{}' \;
 rm *template
 #README.md
 echo "#Holberton School - "$DIR > README.md
