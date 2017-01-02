@@ -3,9 +3,13 @@ Description
 ## New commands / functions used:
 ``gcc``
 ## Helpful Links
-* 
-
-## Description of Files
+* [link](https://docs.python.org/3.4/tutorial/index.html)
+* [link](https://docs.python.org/3.4/tutorial/appetite.html)
+* [link](https://docs.python.org/3.4/tutorial/interpreter.html)
+* [link](https://docs.python.org/3.4/tutorial/introduction.html)
+* [link](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
+* [link](https://www.python.org/dev/peps/pep-0008/)
+* [link](https://pep8.readthedocs.io/en/release-1.7.x/intro.html#installation)
 <h6>0-run</h6>
 
 <h6>1-run_inline</h6>
