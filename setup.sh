@@ -1,10 +1,13 @@
 #!/bin/bash
-echo "Enter the file name of your HTML page."
-read INPUT
-ls $INPUT
-if [[ $? != 0 ]]; then
+if [[ -z $1 ]]; then
+	echo "Usage: ./setup.sh <html_file>"
 	exit 1
 fi
+if [[ ! -r $1 ]]; then
+	echo "File does not exist or is unreadable"
+	exit 1
+fi
+INPUT=$1
 DIR=$(grep Directory: $INPUT | head -1 | cut -d \> -f3 | cut -d \< -f1)
 mkdir $DIR
 cp $INPUT $DIR
