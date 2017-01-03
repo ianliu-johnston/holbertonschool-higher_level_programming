@@ -7,5 +7,5 @@ def uppercase(str):
             endpt = "\n"
         if ord(char) in range(ord('a'), ord('z')+1):
             char = chr(ord(char) - (ord('a') - ord('A')))
-        print('{:s}'.format(char), end=endpt)
+        print(char, end=endpt)
 uppercase("Holbertonzzzz Zz NN")
