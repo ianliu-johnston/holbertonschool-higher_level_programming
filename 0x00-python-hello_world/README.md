@@ -2,7 +2,7 @@
 Introduction to python. Scripting between bash and python3. Setting up python and the very basics.
 
 ## New commands / functions used:
-``python3``, ``pip install pep8``, ``pep8 script.py``
+``python3``, ``pip install pep8``, ``pep8 script.py``, ``import sys``, ``sys.stderr.write()``, ``sys.exit``, ``string[3:-1]``
 
 ## Helpful Links
 * [The Python Tutorial](https://docs.python.org/3.4/tutorial/index.html)
