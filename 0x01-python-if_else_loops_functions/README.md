@@ -1,8 +1,8 @@
 #Holberton School - 0x01-python-if_else_loops_functions
-Description
+Using loops, conditionals, formatting, and functions
 
 ## New commands / functions used:
-``gcc``
+``random.randint(-10, 10)``, ``if num > 0:``, ``val = expr1 if num > 0 else expr2``, ``for num in range (10):``, ``ord('a')``, ``chr(97)``, ``print(1, end="")``, ``print(0x{:02x}.format(num)``
 
 ## Helpful Links
 * [The Python Tutorial](https://docs.python.org/3.4/tutorial/index.html)
@@ -30,6 +30,7 @@ Prints a-z without the letters q and e without a new line
 Prints all numbers from 0 to 98 in hex.
 
 <h6>5-print_comb2.py</h6>
+Prints all numbers from 0 to 99, separated by ", " and ending with a new line character.
 
 <h6>6-print_comb3.py</h6>
 
