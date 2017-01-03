@@ -1,1 +1,5 @@
 #!/bin/bash
+python3 -m py_compile "$PYFILE"
+PYFILEC=$PYFILE'c'
+mv __pycache__/*.pyc ./$PYFILEC && chmod u+x $PYFILEC
+rmdir __pycache__
