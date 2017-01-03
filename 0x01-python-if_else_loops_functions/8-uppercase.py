@@ -8,4 +8,3 @@ def uppercase(str):
         if ord(char) in range(ord('a'), ord('z')+1):
             char = chr(ord(char) - (ord('a') - ord('A')))
         print(char, end=endpt)
-uppercase("Holbertonzzzz Zz NN")
