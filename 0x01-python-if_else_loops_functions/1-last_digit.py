@@ -8,5 +8,5 @@ elif lastdigit == 0:
     result = 'and is zero'
 else:
     result = 'and is less than 6 and not 0'
-print('Last digit of', '{:d}'.format(number), 'is')
+print('Last digit of', '{:d}'.format(number), 'is ', end="")
 print('{:d}'.format(lastdigit), result)
