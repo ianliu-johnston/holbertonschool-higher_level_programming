@@ -5,7 +5,7 @@ def uppercase(str):
     for count, char in enumerate(str):
         if count + 1 == length:
             endpt = "\n"
-        if ord(char) in range(ord('a'), ord('z')):
+        if ord(char) in range(ord('a'), ord('z')+1):
             print('{:c}'.format(ord(char) - (ord('a') - ord('A'))), end=endpt)
         else:
             print(char, end=endpt)
