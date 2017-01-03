@@ -11,5 +11,3 @@ def uppercase(str):
             print(chr(ord(char) - (ord('a') - ord('A'))), end=endpt)
         else:
             print(char, end=endpt)
-uppercase("holberton")
-uppercase("Holberton School 98 Battery street")
