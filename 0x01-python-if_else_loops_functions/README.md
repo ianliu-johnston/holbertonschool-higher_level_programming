@@ -12,7 +12,7 @@ Using loops, conditionals, formatting, and functions
 * [Indentation Error](https://www.youtube.com/watch?v=1QXOd2ZQs-Q)
 * [Learn To Program playlist](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
-
+* [Efficient String Concatenation In Python]( https://waymoot.org/home/python_string/ ) 
 ## Description of Files
 <h6>0-positive_or_negative.py</h6>
 Complete the source code to print whether the random number is positive, negative or zero.
@@ -33,22 +33,31 @@ Prints all numbers from 0 to 98 in hex.
 Prints all numbers from 0 to 99, separated by ", " and ending with a new line character.
 
 <h6>6-print_comb3.py</h6>
+Prints all possible combinations of two digit numbers without any repetition.
 
 <h6>7-islower.py</h6>
+Checks to see if a character is lower. Returns True if it is, False if it isn't.
 
 <h6>8-uppercase.py</h6>
+Changes all lowercase to uppercase.
 
 <h6>9-print_last_digit.py</h6>
+Prints the value of the last digit of the number
 
 <h6>10-add.py</h6>
+Adds 2 numbers together
 
 <h6>11-pow.py</h6>
+Raises a to the power of b
 
 <h6>12-fizzbuzz.py</h6>
+Classic FizzBuzz problem. Print 1 - 100. Multiples of 3, print Fizz, multiples of 5, print Buzz. If the number is both a multiple of 3 and 5, print FizzBuzz
 
 <h6>13-no_c.py</h6>
+Print the alphabet in reverse order, alternating between lower and upper case. zYxWvU...GfEdCbA
 
 <h6>14-only_10.py</h6>
+Removes a character from the string at position n.
 
 <h6>15-print_line.py</h6>
 
