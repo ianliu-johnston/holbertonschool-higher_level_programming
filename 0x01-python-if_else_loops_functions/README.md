@@ -13,6 +13,7 @@ Using loops, conditionals, formatting, and functions
 * [Learn To Program playlist](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
 * [Efficient String Concatenation In Python]( https://waymoot.org/home/python_string/ ) 
+* [Looping backwards stackoverflow](http://stackoverflow.com/questions/3476732/how-to-loop-backwards-in-python)
 
 ## Description of Files
 <h6>0-positive_or_negative.py</h6>
