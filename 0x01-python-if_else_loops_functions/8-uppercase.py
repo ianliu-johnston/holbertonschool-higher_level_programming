@@ -1,11 +1,3 @@
 #!/usr/bin/python3
 def uppercase(str):
-    length = len(str)
-    endpt = ""
-    for count, char in enumerate(str):
-        if count + 1 == length:
-            endpt = "\n"
-        if ord(char) in range(ord('a'), ord('z')):
-            print(chr(ord(char) - (ord('a') - ord('A'))), end=endpt)
-        else:
-            print(char, end=endpt)
+    print(''.join([chr(ord(c)-32) if ord(c)in range(97, 123) else c for c in str]))
