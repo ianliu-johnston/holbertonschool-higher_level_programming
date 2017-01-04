@@ -13,6 +13,7 @@ Using loops, conditionals, formatting, and functions
 * [Learn To Program playlist](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
 * [Efficient String Concatenation In Python]( https://waymoot.org/home/python_string/ ) 
+
 ## Description of Files
 <h6>0-positive_or_negative.py</h6>
 Complete the source code to print whether the random number is positive, negative or zero.
@@ -53,19 +54,37 @@ Raises a to the power of b
 <h6>12-fizzbuzz.py</h6>
 Classic FizzBuzz problem. Print 1 - 100. Multiples of 3, print Fizz, multiples of 5, print Buzz. If the number is both a multiple of 3 and 5, print FizzBuzz
 
-<h6>13-no_c.py</h6>
+<h6>100-print_tebahpla.py</h6>
 Print the alphabet in reverse order, alternating between lower and upper case. zYxWvU...GfEdCbA
 
-<h6>14-only_10.py</h6>
+<h6>101-remove_char_at.py</h6>
 Removes a character from the string at position n.
 
-<h6>15-print_line.py</h6>
-
-<h6>16-print_diagonal.py</h6>
-
-<h6>100-print_tebahpla.py</h6>
-
-<h6>101-remove_char_at.py</h6>
-
 <h6>102-magic_calculation.py</h6>
+Write a function that disassembles to this:
+```
+  3           0 LOAD_FAST                0 (a)
+              3 LOAD_FAST                1 (b)
+              6 COMPARE_OP               0 (<)
+              9 POP_JUMP_IF_FALSE       16
 
+  4          12 LOAD_FAST                2 (c)
+             15 RETURN_VALUE
+
+  5     >>   16 LOAD_FAST                2 (c)
+             19 LOAD_FAST                1 (b)
+             22 COMPARE_OP               4 (>)
+             25 POP_JUMP_IF_FALSE       36
+
+  6          28 LOAD_FAST                0 (a)
+             31 LOAD_FAST                1 (b)
+             34 BINARY_ADD
+             35 RETURN_VALUE
+
+  7     >>   36 LOAD_FAST                0 (a)
+             39 LOAD_FAST                1 (b)
+             42 BINARY_MULTIPLY
+             43 LOAD_FAST                2 (c)
+             46 BINARY_SUBTRACT
+             47 RETURN_VALUE
+```
