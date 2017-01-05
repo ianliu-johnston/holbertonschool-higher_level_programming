@@ -12,7 +12,7 @@ DIR=$(grep Directory: $INPUT | head -1 | cut -d \> -f3 | cut -d \< -f1)
 mkdir $DIR
 cp $INPUT $DIR
 cd $DIR
-echo -e "a.out\n*.swp\n~*\n_betty-s\n_betty-d\n" >> .gitignore
+echo -e "a.out\n*.swp\n~*\n_betty-s\n_betty-d\n__pycache__\n" >> .gitignore
 #Create the files
 echo "Creating the files and directory structure"
 touch $(grep File: $INPUT | cut -d \> -f3 | cut -d \< -f1)
