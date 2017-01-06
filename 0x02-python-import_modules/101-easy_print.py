@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import cheap_print_trick
+import easy_print
 #import subprocess
 #subprocess.call(["echo", "#pythoniscool"])
 #from ctypes import *
