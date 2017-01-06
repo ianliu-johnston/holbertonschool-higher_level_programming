@@ -6,9 +6,9 @@ if __name__ == "__main__":
         print("Usage:", argv[0], "<a> <operator> <b>")
         exit(1)
 
-    a, operator, b = int(argv[1]), argv[2], int(argv[3])
-    operations = {'+': add, '-': sub, '*': mul, '/': div}
-    if operator not in operations:
+    a, operand, b = int(argv[1]), argv[2], int(argv[3])
+    arith = {'+': add, '-': sub, '*': mul, '/': div}
+    if operand not in arith:
         print("Unknown operator. Only: +, -, * and / available")
         exit(1)
-    print('{:d} {} {:d} = {:d}'.format(a, operator, b, operations[operator](a, b)))
+    print('{:d} {} {:d} = {:d}'.format(a, operand, b, arith[operand](a, b)))
