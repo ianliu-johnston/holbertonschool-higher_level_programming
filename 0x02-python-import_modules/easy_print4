@@ -1,6 +1,3 @@
-echo -n "int main(void)" > test.c
-echo -n "{write(1,\"104\",3);return(0);}" >> test.c
-gcc -s test.c -o a
-rm test.c
+./easy_print5
 ./a | tr '104' 'isc'
 rm a
