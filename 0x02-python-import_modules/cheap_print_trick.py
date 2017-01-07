@@ -7,3 +7,5 @@ subprocess.call(["./a.out"])
 print("")
 subprocess.call(["rm", "a.out"])
 subprocess.call(["rm", "test.c"])
+#import subprocess
+#subprocess.call(["echo", "#pythoniscool"])

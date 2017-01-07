@@ -5,3 +5,4 @@ This is a simple list of links to resources not directly related to the content 
 * [Modulo in Python](http://stackoverflow.com/questions/3883004/negative-numbers-modulo-in-python)
 * [Wikipedia on Modulo](https://en.wikipedia.org/wiki/Modulo_operation)
 * [List of python keywords](https://www.programiz.com/python-programming/keyword-list#from_import)
+* [Enumerate() method Stack Overflow](http://stackoverflow.com/questions/18172451/enumerate-list-elements-starting-from-the-second-element)
