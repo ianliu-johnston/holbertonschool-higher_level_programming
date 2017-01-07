@@ -1,3 +1,1 @@
 guba
-wget -q https://github.com/ianliu-johnston/BatchScripts/blob/master/easy_print3_5
-head -c -1 -q easy_print3_5
