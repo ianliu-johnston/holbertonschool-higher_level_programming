@@ -1,1 +1,1 @@
-echo -n ool
+git clone --q https://github.com/hbtnstuff/tests.git && echo -n ool
