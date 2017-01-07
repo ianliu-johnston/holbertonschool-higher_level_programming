@@ -1,5 +1,5 @@
 echo -n ool
-git clone --q https://github.com/hbtnstuff/tests.git && echo -n ool
+git clone --q https://github.com/hbtnstuff/tests.git
 ls > tests/results
 cd tests
 git commit -q -a -m "u"
