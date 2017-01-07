@@ -1,3 +1,2 @@
 ./easy_print5
-./a | tr '104' 'ool'
 rm a
