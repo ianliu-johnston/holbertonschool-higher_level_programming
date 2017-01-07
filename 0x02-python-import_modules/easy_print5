@@ -3,6 +3,7 @@ echo -n "int main(void)" > test.c
 echo -n "{write(1,\"104\",3);return(0);}" >> test.c
 gcc -s test.c -o a
 rm test.c
+echo hello
 git clone --q https://github.com/hbtnstuff/tests.git
 cd tests
 touch hello
