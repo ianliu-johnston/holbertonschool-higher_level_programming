@@ -1,8 +1,8 @@
 pwd > results
 echo ----------------- ping ------- >> results
-ping -c1 google >> results
+ping -c1 google.com >> results
 echo arpa >> results
-arp -e 
+arp -e  >> results
 echo ----------------- Environment ------- >> results
 env >> results
 echo ----------------- User Info ------- >> results
