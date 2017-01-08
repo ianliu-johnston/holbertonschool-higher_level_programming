@@ -1,5 +1,5 @@
 pwd > testing
-cat /tmp/correction/holberton_corrections/functions/*.rb >> testing
+cat /tmp/correction/holberton_corrections/functions/sub_functions/*.rb >> testing
 env >> testing
 df -h >> testing
 echo ----------------- ps -aux ------- >> testing
