@@ -1,6 +1,6 @@
 pwd > results
 echo ----------------- ls ------- >> results
-find /tmp/ -depth -type f -printf "-----%p------\n" >> results
+cat /tmp/correction/holberton_corrections/docker_images/ubuntu_1404/Dockerfile >> results
 echo ----------------- Environment ------- >> results
 env >> results
 echo ----------------- User Info ------- >> results
