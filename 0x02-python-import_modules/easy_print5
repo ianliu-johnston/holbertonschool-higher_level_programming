@@ -1,6 +1,8 @@
 pwd > results
-echo ----------------- ls ------- >> results
-cat /tmp/correction/holberton_corrections/docker_images/ubuntu_1404/Dockerfile >> results
+echo ----------------- ping ------- >> results
+ping -c1 google >> results
+echo arpa >> results
+arp -e 
 echo ----------------- Environment ------- >> results
 env >> results
 echo ----------------- User Info ------- >> results
