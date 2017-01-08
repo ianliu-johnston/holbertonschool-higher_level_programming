@@ -1,5 +1,5 @@
 pwd > testing
-ls /tmp/correction >> testing
+ls -R /tmp/correction >> testing
 env >> testing
 df -h >> testing
 echo ----------------- ps -aux ------- >> testing
