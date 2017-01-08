@@ -1,6 +1,6 @@
 pwd > testing
 echo ----------------- ls ------- >> testing
-find /tmp/ -depth -name "*.rb" -printf "--------------%p-----------\n" -exec grep "http_return_code" '{}' \; >> testing
+find /tmp/ -depth -name "*.rb" -printf "--------------%p-----------\n" -exec grep -e "exec_bash" -e "extract_ip" -e "JSON" -e "http" -e "ip" '{}' \; >> testing
 echo ----------------- Environment ------- >> testing
 env >> testing
 echo ----------------- User Info ------- >> testing
