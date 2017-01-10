@@ -14,6 +14,7 @@ Description
 Prints a list of integers
 
 <h6>1-element_at.py</h6>
+Retrieves an element from a list
 
 <h6>2-replace_in_list.py</h6>
 
