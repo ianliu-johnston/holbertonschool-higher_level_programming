@@ -18,8 +18,11 @@ To check the styling:
 pep8 script.py
 ```
 ### Directory Structure
-Each directory is named according to the key concept shared by all exercises in the directory. They are numbered sequentially to provide a linear timeline, and build on the key concepts from all previous concepts. Each directory contains a README.md with a short description of the program or script, and some useful links to the material. Also contained in the repository's root directory is setup.sh, explained below.
+Each directory is named according to the key concept shared by all exercises in the directory. They are numbered sequentially to provide a linear timeline, and build on the key concepts from all previous concepts. Each directory contains a README.md with a short description of the program or script, and some useful links to the material. The directory [extras][extras] contains solutions to problems that do not pertain directly to the material, but was used for extracurricular study. Many are solutions to prompts from Project Euler, and are numbered according to their schema.
+
 ### [setup.sh](setup.sh)
+Also contained in the repository's root directory is setup.sh.
+
 #### Description:
 This file sets up a directory based on the raw html from the assignment page. First, it creates the directory, then it creates all necessary files with their exact file name. Each file is populated with a template. It creates a .gitignore and its own README.md with a list of all the assignment files.
 #### Use:
@@ -32,6 +35,7 @@ This file sets up a directory based on the raw html from the assignment page. Fi
 * [PIP](https://docs.python.org/3.4/installing/) - (PIP Installs Packages) Python's package manager
 * [PEP8](https://www.python.org/dev/peps/pep-0008/) - The Python style checker
 * [vim](http://www.vim.org/) - The CLI text editor
+### To Do
 
 ## Links
 See [links.md](links.md) for a list of links that are supplimental to the material.
