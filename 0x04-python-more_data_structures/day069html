@@ -1,0 +1,2012 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Holberton School">
+    <link rel="icon" href="../../favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <title>Holberton School's awesome intranet</title>
+
+	<link rel="stylesheet" media="all" href="/assets/application-db3812a3f2ca9d0bad785735e12c914d1cd84a76ea29dae954e190aef0d9dbcc.css" />
+	<script src="/assets/application-8fb7b8da8395b357f26c7097e76564a55eb64d6906cc9e5248a2da2e4907ce58.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.ico" />
+	<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="2d9Jnp9DAmx/acBRUwnB8Cb2CjtknCLm0vhSlpKk/RK1FMY/RZne1p7/8WMRU0uV64i4JQTJHuARgpOYU+KPAw==" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="signed_in">
+
+      <nav id="nav-left" class="hidden-xs title-font">
+        <a href="/">
+          <div id="holberton-logo">
+            <img alt="Holberton School" src="/assets/holberton-logo-simplified-d4e8a1e8bf5ad93c8c3ce32895b4b53749b477b7ba7342d7f064e6883bcd3be2.png" />
+          </div>
+</a>        <ul>
+            <li>
+    <a href="/dashboards/my_planning">
+        <div class="icon">
+          <i class="fa fa-calendar"></i>
+        </div>
+      My planning
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_current_projects">
+        <div class="icon">
+          <i class="fa fa-list"></i>
+        </div>
+      My projects
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_concepts">
+        <div class="icon">
+          <i class="fa fa-file-text"></i>
+        </div>
+      My concepts
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_batchmates">
+        <div class="icon">
+          <i class="fa fa-users"></i>
+        </div>
+      My batchmates
+</a>  </li>
+  <li>
+    <a href="/dashboards/corrections_i_can_make">
+        <div class="icon">
+          <i class="fa fa-check"></i>
+        </div>
+      QA reviews I can make
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_captain_log">
+        <div class="icon">
+          <i class="fa fa-book"></i>
+        </div>
+      My Captain's Logs
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_officers">
+        <div class="icon">
+          <i class="fa fa-building"></i>
+        </div>
+      My Officers
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_speakers_of_the_day">
+        <div class="icon">
+          <i class="fa fa-microphone"></i>
+        </div>
+      My Speakers of the day
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_server">
+        <div class="icon">
+          <i class="fa fa-server"></i>
+        </div>
+      My Servers
+</a>  </li>
+
+<li>
+  <a href="/users/my_profile">
+      <div class="icon">
+        <i class="fa fa-user"></i>
+      </div>
+    My profile
+</a></li>
+
+        </ul>
+      </nav>
+
+    <main>
+
+        <nav class="navbar navbar-default navbar-main visible-xs">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">
+                  <img alt="Holberton School" src="/assets/holberton-logo-simplified-d4e8a1e8bf5ad93c8c3ce32895b4b53749b477b7ba7342d7f064e6883bcd3be2.png" />
+</a>            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <li>
+    <a href="/dashboards/my_planning">
+      My planning
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_current_projects">
+      My projects
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_concepts">
+      My concepts
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_batchmates">
+      My batchmates
+</a>  </li>
+  <li>
+    <a href="/dashboards/corrections_i_can_make">
+      QA reviews I can make
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_captain_log">
+      My Captain's Logs
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_officers">
+      My Officers
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_speakers_of_the_day">
+      My Speakers of the day
+</a>  </li>
+  <li>
+    <a href="/dashboards/my_server">
+      My Servers
+</a>  </li>
+
+<li>
+  <a href="/users/my_profile">
+    My profile
+</a></li>
+
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ian Liu-Johnston <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a rel="nofollow" data-method="delete" href="/auth/sign_out">Log out</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+
+
+
+      <article class="">
+          <div class="alert alert-info sm-gap">You just released the optional tasks of this project. Have fun!</div>
+
+        
+<h1 class="gap">0x04. Python - More Data Structures: Set, Dictionary</h1>
+
+<div id="project_id" style="display: none" data-project-id="243"></div>
+
+<p class="sm-gap">
+  <small>
+    <i class="fa fa-folder-open"></i>
+    Higher-level programming ― Python
+  </small>
+</p>
+
+  <p>
+    <em>
+      <small>
+        <i class="fa fa-user"></i> by Guillaume, Full stack engineer
+      </small>
+    </em>
+  </p>
+
+
+
+  <p>
+    <small>
+      <i class="fa fa-calendar"></i>
+        Ongoing project - started 01-12-2017, must end by 01-13-2017 (in about 24 hours)
+        - <span id="student_task_done_percentage">you're 0</span>% done.
+    </small>
+  </p>
+
+  <p>
+    <small>
+      <i class="fa fa-check-square"></i>
+      QA review fully automated.
+    </small>
+  </p>
+
+
+
+
+<article id="description" class="gap formatted-content">
+  <h2>Readme</h2>
+
+<p>Read or watch <a href="https://docs.python.org/3.4/tutorial/datastructures.html">Data structures</a> from <a href="https://docs.python.org/3.4/tutorial/index.html">The Python tutorial</a>, <a href="http://www.python-course.eu/python3_lambda.php">Lambda, filter, reduce and map</a> and <a href="https://www.youtube.com/watch?v=1GAC6KQUPeg">Learn to Program 12 Lambda Map Filter Reduce</a>.</p>
+
+<p>man: <code>python3</code></p>
+
+<h2>What you should learn from this project</h2>
+
+<p>At the end of this project you are expected to be able to explain to anyone, <strong>without the help of Google</strong>:</p>
+
+<ul>
+<li>Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))</li>
+<li>What are set and how to use them</li>
+<li>What are the most common methods of set and how to use them</li>
+<li>When to use sets versus lists</li>
+<li>How to iterate into a set</li>
+<li>What are dictionary and how to use them</li>
+<li>When to use dictionaries versus lists or sets</li>
+<li>What is a key in a dictionary</li>
+<li>How to iterate into a dictionary</li>
+<li>What is a lambda function</li>
+<li>What is map, reduce and map functions</li>
+</ul>
+
+<h2>Requirements for Python scripts</h2>
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be interpreted/compiled on Ubuntu 14.04 LTS using <code>python3</code> (version 3.4.3)</li>
+<li>All your files should end with a new line</li>
+<li>The first line of all your files should be exactly <code>#!/usr/bin/python3</code></li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+<li>Your code should use the <code>PEP 8</code> style</li>
+<li>All your files must be executable</li>
+<li>The length of your files will be tested using <code>wc</code></li>
+</ul>
+
+</article>
+
+  <hr class="gap">
+  <h2 class="gap">Tasks</h2>
+  <section class="formatted-content">
+        <div data-role="task1135" data-position="1">
+            <div class=" clearfix gap" id="task-1135">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1135">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1135" data-toggle="modal" data-target="#task-1135-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1135-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Squared simple"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1135/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1135" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    0. Squared simple
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that computes the square value of all integers of a matrix.</p>
+
+<ul>
+<li>Prototype: <code>def square_matrix(matrix=[]):</code></li>
+<li>Returns a new matrix:
+
+<ul>
+<li>Same size as <code>matrix</code></li>
+<li>Each value should be the square of the value of the input</li>
+</ul></li>
+<li>Initial matrix should not be modified</li>
+<li>You are not allowed to import any module</li>
+<li>You are allow to use regular loops, <code>map</code>, etc.</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 0-main.py
+#!/usr/bin/python3
+square_matrix_simple = __import__(&#39;0-square_matrix_simple&#39;).square_matrix_simple
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+new_matrix = square_matrix_simple(matrix)
+print(new_matrix)
+print(matrix)
+
+guillaume@ubuntu:~/0x04$ ./0-main.py
+[[1, 4, 9], [16, 25, 36], [49, 64, 81]]
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>0-square_matrix_simple.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1138" data-position="2">
+            <div class=" clearfix gap" id="task-1138">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1138">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1138" data-toggle="modal" data-target="#task-1138-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1138-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Search and replace"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1138/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1138" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    1. Search and replace
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that replaces all occurrences of an element by another in a new list.</p>
+
+<ul>
+<li>Prototype: <code>def search_replace(my_list, search, replace):</code></li>
+<li><code>list</code> is the initial list</li>
+<li><code>search</code> is the element to replace in the list</li>
+<li><code>replace</code> is the new element</li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 1-main.py
+#!/usr/bin/python3
+search_replace = __import__(&#39;1-search_replace&#39;).search_replace
+
+my_list = [1, 2, 3, 4, 5, 4, 2, 1, 1, 4, 89]
+new_list = search_replace(my_list, 2, 89)
+
+print(new_list)
+print(my_list)
+
+guillaume@ubuntu:~/0x04$ ./1-main.py
+[1, 89, 3, 4, 5, 4, 89, 1, 1, 4, 89]
+[1, 2, 3, 4, 5, 4, 2, 1, 1, 4, 89]
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>1-search_replace.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1139" data-position="3">
+            <div class=" clearfix gap" id="task-1139">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1139">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1139" data-toggle="modal" data-target="#task-1139-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1139-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Unique addition"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1139/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1139" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    2. Unique addition
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that makes the addition of all unique integers in a list.</p>
+
+<ul>
+<li>Prototype: <code>def uniq_add(my_list=[]):</code></li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 2-main.py
+#!/usr/bin/python3
+uniq_add = __import__(&#39;2-uniq_add&#39;).uniq_add
+
+my_list = [1, 2, 3, 1, 4, 2, 5]
+result = uniq_add(my_list)
+print(&quot;Result: {:d}&quot;.format(result))
+
+guillaume@ubuntu:~/0x04$ ./2-main.py
+Result: 15
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>2-uniq_add.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1140" data-position="4">
+            <div class=" clearfix gap" id="task-1140">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1140">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1140" data-toggle="modal" data-target="#task-1140-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1140-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Present in both"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1140/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1140" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    3. Present in both
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that returns a set of common elements in two sets.</p>
+
+<ul>
+<li>Prototype: <code>def common_elements(set_1, set_2):</code></li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 3-main.py
+#!/usr/bin/python3
+common_elements = __import__(&#39;3-common_elements&#39;).common_elements
+
+set_1 = { &quot;Python&quot;, &quot;C&quot;, &quot;Javascript&quot; }
+set_2 = { &quot;Bash&quot;, &quot;C&quot;, &quot;Ruby&quot;, &quot;Perl&quot; }
+c_set = common_elements(set_1, set_2)
+print(sorted(list(c_set)))
+
+guillaume@ubuntu:~/0x04$ ./3-main.py
+[&#39;C&#39;]
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>3-common_elements.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1141" data-position="5">
+            <div class=" clearfix gap" id="task-1141">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1141">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1141" data-toggle="modal" data-target="#task-1141-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1141-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Only differents"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1141/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1141" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    4. Only differents
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that returns a set of all elements present in only one set.</p>
+
+<ul>
+<li>Prototype: <code>def common_elements(set_1, set_2):</code></li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 4-main.py
+#!/usr/bin/python3
+only_diff_elements = __import__(&#39;4-only_diff_elements&#39;).only_diff_elements
+
+set_1 = { &quot;Python&quot;, &quot;C&quot;, &quot;Javascript&quot; }
+set_2 = { &quot;Bash&quot;, &quot;C&quot;, &quot;Ruby&quot;, &quot;Perl&quot; }
+od_set = only_diff_elements(set_1, set_2)
+print(sorted(list(od_set)))
+
+guillaume@ubuntu:~/0x04$ ./4-main.py
+[&#39;Bash&#39;, &#39;Javascript&#39;, &#39;Perl&#39;, &#39;Python&#39;, &#39;Ruby&#39;]
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>4-only_diff_elements.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1142" data-position="6">
+            <div class=" clearfix gap" id="task-1142">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1142">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1142" data-toggle="modal" data-target="#task-1142-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1142-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Number of keys"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1142/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1142" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    5. Number of keys
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that returns the number of keys in a dictionary.</p>
+
+<ul>
+<li>Prototype: <code>def number_keys(my_dict):</code></li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 5-main.py
+#!/usr/bin/python3
+number_keys = __import__(&#39;5-number_keys&#39;).number_keys
+
+my_dict = { &#39;language&#39;: &quot;C&quot;, &#39;number&#39;: 13, &#39;track&#39;: &quot;Low level&quot; }
+nb_keys = number_keys(my_dict)
+print(&quot;Number of keys: {:d}&quot;.format(nb_keys))
+
+guillaume@ubuntu:~/0x04$ ./5-main.py
+Number of keys: 3
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>5-number_keys.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1143" data-position="7">
+            <div class=" clearfix gap" id="task-1143">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1143">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1143" data-toggle="modal" data-target="#task-1143-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1143-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Print sorted dictionary"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1143/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1143" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    6. Print sorted dictionary
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that prints a dictionary by ordered keys.</p>
+
+<ul>
+<li>Prototype: <code>def print_sorted_dictionary(my_dict):</code></li>
+<li>You can assume that all keys are string</li>
+<li>Keys should be sorted by alphabetic order</li>
+<li>Only sort keys of the first level (don&#39;t sort keys of a dictionary inside the main dictionary)</li>
+<li>Dictionary values can have any type</li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 6-main.py
+#!/usr/bin/python3
+print_sorted_dictionary = __import__(&#39;6-print_sorted_dictionary&#39;).print_sorted_dictionary
+
+my_dict = { &#39;language&#39;: &quot;C&quot;, &#39;Number&#39;: 89, &#39;track&#39;: &quot;Low level&quot;, &#39;ids&#39;: [1, 2, 3] }
+print_sorted_dictionary(my_dict)
+
+guillaume@ubuntu:~/0x04$ ./6-main.py
+Number: 89
+ids: [1, 2, 3]
+language: C
+track: Low level
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>6-print_sorted_dictionary.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1144" data-position="8">
+            <div class=" clearfix gap" id="task-1144">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1144">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1144" data-toggle="modal" data-target="#task-1144-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1144-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Update dictionary"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1144/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1144" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    7. Update dictionary
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that replace or add key/value in a dictionary.</p>
+
+<ul>
+<li>Prototype: <code>def update_dictionary(my_dict, key, value):</code></li>
+<li><code>key</code> argument will be always a string</li>
+<li><code>value</code> argument will be any type</li>
+<li>If a key exists in the dictionary, the value will be replaced</li>
+<li>If a key doesn&#39;t exist in the dictionary, it will be created</li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 7-main.py
+#!/usr/bin/python3
+update_dictionary = __import__(&#39;7-update_dictionary&#39;).update_dictionary
+print_sorted_dictionary = __import__(&#39;6-print_sorted_dictionary&#39;).print_sorted_dictionary
+
+my_dict = { &#39;language&#39;: &quot;C&quot;, &#39;number&#39;: 89, &#39;track&#39;: &quot;Low level&quot; }
+new_dict = update_dictionary(my_dict, &#39;language&#39;, &quot;Python&quot;)
+print_sorted_dictionary(new_dict)
+print(&quot;--&quot;)
+print_sorted_dictionary(my_dict)
+
+print(&quot;--&quot;)
+print(&quot;--&quot;)
+
+new_dict = update_dictionary(my_dict, &#39;city&#39;, &quot;San Francisco&quot;)
+print_sorted_dictionary(new_dict)
+print(&quot;--&quot;)
+print_sorted_dictionary(my_dict)
+
+guillaume@ubuntu:~/0x04$ ./7-main.py
+language: Python
+number: 89
+track: Low level
+--
+language: Python
+number: 89
+track: Low level
+--
+--
+city: San Francisco
+language: Python
+number: 89
+track: Low level
+--
+city: San Francisco
+language: Python
+number: 89
+track: Low level
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>7-update_dictionary.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1145" data-position="9">
+            <div class=" clearfix gap" id="task-1145">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1145">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1145" data-toggle="modal" data-target="#task-1145-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1145-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Simple delete by key"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1145/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1145" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    8. Simple delete by key
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that deletes a key in a dictionary.</p>
+
+<ul>
+<li>Prototype: <code>def simple_delete(my_dict, key=&quot;&quot;):</code></li>
+<li><code>key</code> argument will be always a string</li>
+<li>If a key doesn&#39;t exist, the dictionary won&#39;t change</li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 8-main.py
+#!/usr/bin/python3
+simple_delete = __import__(&#39;8-simple_delete&#39;).simple_delete
+print_sorted_dictionary = \
+    __import__(&#39;6-print_sorted_dictionary&#39;).print_sorted_dictionary
+
+my_dict = { &#39;language&#39;: &quot;C&quot;, &#39;Number&#39;: 89, &#39;track&#39;: &quot;Low&quot;, &#39;ids&#39;: [1, 2, 3] }
+new_dict = simple_delete(my_dict, &#39;track&#39;)
+print_sorted_dictionary(my_dict)
+print(&quot;--&quot;)
+print_sorted_dictionary(new_dict)
+
+print(&quot;--&quot;)
+print(&quot;--&quot;)
+new_dict = simple_delete(my_dict, &#39;c_is_fun&#39;)
+print_sorted_dictionary(my_dict)
+print(&quot;--&quot;)
+print_sorted_dictionary(new_dict)
+
+guillaume@ubuntu:~/0x04$ ./8-main.py
+Number: 89
+ids: [1, 2, 3]
+language: C
+--
+Number: 89
+ids: [1, 2, 3]
+language: C
+--
+--
+Number: 89
+ids: [1, 2, 3]
+language: C
+--
+Number: 89
+ids: [1, 2, 3]
+language: C
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>8-simple_delete.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1146" data-position="10">
+            <div class=" clearfix gap" id="task-1146">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1146">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1146" data-toggle="modal" data-target="#task-1146-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1146-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Multiply by 2"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1146/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1146" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    9. Multiply by 2
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that returns a new dictionary with all values multiplied by 2</p>
+
+<ul>
+<li>Prototype: <code>def multiply_by_2(my_dict):</code></li>
+<li>You can assume that all values are only integers</li>
+<li>Returns a new dictionary</li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 9-main.py
+#!/usr/bin/python3
+multiply_by_2 = __import__(&#39;9-multiply_by_2&#39;).multiply_by_2
+print_sorted_dictionary = \
+    __import__(&#39;6-print_sorted_dictionary&#39;).print_sorted_dictionary
+
+my_dict = {&#39;John&#39;: 12, &#39;Alex&#39;: 8, &#39;Bob&#39;: 14, &#39;Mike&#39;: 14, &#39;Molly&#39;: 16}
+new_dict = multiply_by_2(my_dict)
+print_sorted_dictionary(my_dict)
+print(&quot;--&quot;)
+print_sorted_dictionary(new_dict)
+
+guillaume@ubuntu:~/0x04$ ./9-main.py
+Alex: 8
+Bob: 14
+John: 12
+Mike: 14
+Molly: 16
+--
+Alex: 16
+Bob: 28
+John: 24
+Mike: 28
+Molly: 32
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>9-multiply_by_2.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1147" data-position="11">
+            <div class=" clearfix gap" id="task-1147">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1147">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1147" data-toggle="modal" data-target="#task-1147-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1147-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Best score"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1147/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1147" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    10. Best score
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that returns a key with the biggest integer value.</p>
+
+<ul>
+<li>Prototype: <code>def best_score(my_dict):</code></li>
+<li>You can assume that all values are only integers</li>
+<li>If no score found, return <code>None</code></li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 10-main.py
+#!/usr/bin/python3
+best_score = __import__(&#39;10-best_score&#39;).best_score
+
+my_dict = {&#39;John&#39;: 12, &#39;Bob&#39;: 14, &#39;Mike&#39;: 14, &#39;Molly&#39;: 16, &#39;Adam&#39;: 10}
+best_key = best_score(my_dict)
+print(&quot;Best score: {}&quot;.format(best_key))
+
+best_key = best_score(None)
+print(&quot;Best score: {}&quot;.format(best_key))
+
+guillaume@ubuntu:~/0x04$ ./10-main.py
+Best score: Molly
+Best score: None
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>10-best_score.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1148" data-position="12">
+            <div class=" clearfix gap" id="task-1148">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1148">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1148" data-toggle="modal" data-target="#task-1148-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1148-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Multiply by using map"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1148/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1148" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    11. Multiply by using map
+    <span class="alert alert-warning mandatory-optional">
+      mandatory
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that returns a list with all values multiplied by a number without using any loops.</p>
+
+<ul>
+<li>Prototype: <code>def mutiply_list_map(my_list=[], number=0):</code></li>
+<li>Returns a new list:
+
+<ul>
+<li>Same length as <code>my_list</code></li>
+<li>Each value should be multiplied by <code>number</code></li>
+</ul></li>
+<li>Initial list should not be modified</li>
+<li>You are not allowed to import any module</li>
+<li>You have to use <code>map</code></li>
+<li>Your file should be max 3 lines</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 11-main.py
+#!/usr/bin/python3
+mutiply_list_map = __import__(&#39;11-mutiply_list_map&#39;).mutiply_list_map
+
+my_list = [1, 2, 3, 4, 6]
+new_list = mutiply_list_map(my_list, 4)
+print(new_list)
+print(my_list)
+
+guillaume@ubuntu:~/0x04$ ./11-main.py
+[4, 8, 12, 16, 24]
+[1, 2, 3, 4, 6]
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>11-mutiply_list_map.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1149" data-position="13">
+            <div class=" clearfix gap" id="task-1149">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1149">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1149" data-toggle="modal" data-target="#task-1149-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1149-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Average with ponderation!"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1149/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1149" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    12. Average with ponderation!
+    <span class="alert alert-info mandatory-optional">
+      #advanced
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that returns the average of all integers tuple <code>(&lt;score&gt;, &lt;coefficient&gt;)</code></p>
+
+<ul>
+<li>Prototype: <code>def weight_average(my_list=[]):</code></li>
+<li>Returns <code>0</code> if the list is empty</li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 100-main.py
+#!/usr/bin/python3
+weight_average = __import__(&#39;100-weight_average&#39;).weight_average
+
+my_list = [(1, 2), (2, 1), (3, 10), (4, 2)]
+result = weight_average(my_list)
+print(&quot;Average: {:0.2f}&quot;.format(result))
+
+guillaume@ubuntu:~/0x04$ ./100-main.py
+Average: 2.80
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>100-weight_average.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1150" data-position="14">
+            <div class=" clearfix gap" id="task-1150">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1150">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1150" data-toggle="modal" data-target="#task-1150-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1150-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Squared by using map"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1150/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1150" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    13. Squared by using map
+    <span class="alert alert-info mandatory-optional">
+      #advanced
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that computes the square value of all integers of a matrix using <code>map</code></p>
+
+<ul>
+<li>Prototype: <code>def square_matrix_map(matrix=[]):</code></li>
+<li>Returns a new matrix:
+
+<ul>
+<li>Same size as <code>matrix</code></li>
+<li>Each value should be the square of the value of the input</li>
+</ul></li>
+<li>Initial matrix should not be modified</li>
+<li>You are not allowed to import any module</li>
+<li>You have to use <code>map</code></li>
+<li>Your file should be max 3 lines</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 101-main.py
+#!/usr/bin/python3
+square_matrix_map = \
+    __import__(&#39;101-square_matrix_map&#39;).square_matrix_map
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+new_matrix = square_matrix_map(matrix)
+print(new_matrix)
+print(matrix)
+
+guillaume@ubuntu:~/0x04$ ./101-main.py
+[[1, 4, 9], [16, 25, 36], [49, 64, 81]]
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>101-square_matrix_map.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1151" data-position="15">
+            <div class=" clearfix gap" id="task-1151">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1151">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1151" data-toggle="modal" data-target="#task-1151-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1151-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "Delete by value"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1151/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1151" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    14. Delete by value
+    <span class="alert alert-info mandatory-optional">
+      #advanced
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Write a function that deletes keys with a specific value in a dictionary.</p>
+
+<ul>
+<li>Prototype: <code>def complex_delete(my_dict, value):</code></li>
+<li>If the value doesn&#39;t exist, the dictionary won&#39;t change</li>
+<li>All keys having the searched value have to be deleted</li>
+<li>You are not allowed to import any module</li>
+</ul>
+
+<pre><code>guillaume@ubuntu:~/0x04$ cat 102-main.py
+#!/usr/bin/python3
+complex_delete = __import__(&#39;102-complex_delete&#39;).complex_delete
+print_sorted_dictionary = \
+    __import__(&#39;6-print_sorted_dictionary&#39;).print_sorted_dictionary
+
+my_dict = {&#39;lang&#39;: &quot;C&quot;, &#39;track&#39;: &quot;Low&quot;, &#39;pref&#39;: &quot;C&quot;, &#39;ids&#39;: [1, 2, 3]}
+new_dict = complex_delete(my_dict, &#39;C&#39;)
+print_sorted_dictionary(my_dict)
+print(&quot;--&quot;)
+print_sorted_dictionary(new_dict)
+
+print(&quot;--&quot;)
+print(&quot;--&quot;)
+new_dict = complex_delete(my_dict, &#39;c_is_fun&#39;)
+print_sorted_dictionary(my_dict)
+print(&quot;--&quot;)
+print_sorted_dictionary(new_dict)
+
+guillaume@ubuntu:~/0x04$ ./102-main.py
+ids: [1, 2, 3]
+track: Low
+--
+ids: [1, 2, 3]
+track: Low
+--
+--
+ids: [1, 2, 3]
+track: Low
+--
+ids: [1, 2, 3]
+track: Low
+guillaume@ubuntu:~/0x04$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>102-complex_delete.py</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+        <div data-role="task1152" data-position="16">
+            <div class=" clearfix gap" id="task-1152">
+<span id="user_id" data-id="62"></span>
+
+    <div class="student_task_controls">
+      
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default no" data-task-id="1152">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+      
+      <!-- button Who is done? -->
+      <button class="users_done_for_task btn btn-default btn-sm" data-task-id="1152" data-toggle="modal" data-target="#task-1152-users-done-modal">
+        Who is done?
+      </button>
+      <div class="modal fade users-done-modal" id="task-1152-users-done-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Batchmates who are done with "CPython #1: PyBytesObject"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+                  <a class="btn btn-default btn-sm student_task_help" data-confirm="Are you sure you wish to notify people?" href="/tasks/1152/mark_as_help">Help!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- button Help! / Canel help -->
+          <button class="student_task_help btn btn-default btn-sm" data-task-id="1152" >
+            Help!
+          </button>
+    </div>
+
+  <h4 class="task">
+    15. CPython #1: PyBytesObject
+    <span class="alert alert-info mandatory-optional">
+      #advanced
+    </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+
+  
+
+  <p>Create two C functions that print some basic info about Python lists and Python bytes objects.<br />
+<br />
+<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/243/giphy-4.gif" alt="Gif">
+<br />
+Python lists:</p>
+
+<ul>
+<li>Prototype: <code>void print_python_list(PyObject *p);</code></li>
+<li>Format: see example</li>
+</ul>
+
+<p>Python bytes:</p>
+
+<ul>
+<li>Prototype: <code>void print_python_bytes(PyObject *p);</code></li>
+<li>Format: see example</li>
+<li>Line &quot;first X bytes&quot;: print a maximum of 10 bytes</li>
+<li>If <code>p</code> is not a valid <code>PyBytesObject</code>, print an error message (see example)</li>
+<li>Read <code>/usr/include/python3.4/bytesobject.h</code></li>
+</ul>
+
+<p>About:</p>
+
+<ul>
+<li>Python version: 3.4</li>
+<li>Your shared library will be compiled with this command line: <code>gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c</code></li>
+<li>You are not allowed to use the following macros/functions:
+
+<ul>
+<li><code>Py_SIZE</code></li>
+<li><code>Py_TYPE</code></li>
+<li><code>PyList_GetItem</code></li>
+<li><code>PyBytes_AS_STRING</code></li>
+<li><code>PyBytes_GET_SIZE</code></li>
+</ul></li>
+</ul>
+
+<pre><code>julien@ubuntu:~/CPython$ python3 --version
+Python 3.4.3
+julien@ubuntu:~/CPython$ gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c
+julien@ubuntu:~/CPython$ cat 103-tests.py 
+import ctypes
+
+lib = ctypes.CDLL(&#39;./libPython.so&#39;)
+lib.print_python_list.argtypes = [ctypes.py_object]
+lib.print_python_bytes.argtypes = [ctypes.py_object]
+s = b&quot;Hello&quot;
+lib.print_python_bytes(s);
+b = b&#39;\xff\xf8\x00\x00\x00\x00\x00\x00&#39;;
+lib.print_python_bytes(b);
+b = b&#39;What does the \&#39;b\&#39; character do in front of a string literal?&#39;;
+lib.print_python_bytes(b);
+l = [b&#39;Hello&#39;, b&#39;World&#39;]
+lib.print_python_list(l)
+del l[1]
+lib.print_python_list(l)
+l = l + [4, 5, 6.0, (9, 8), [9, 8, 1024], b&quot;Holberton&quot;, &quot;Betty&quot;]
+lib.print_python_list(l)
+l = []
+lib.print_python_list(l)
+l.append(0)
+lib.print_python_list(l)
+l.append(1)
+l.append(2)
+l.append(3)
+l.append(4)
+lib.print_python_list(l)
+l.pop()
+lib.print_python_list(l)
+l = [&quot;Holberton&quot;]
+lib.print_python_list(l)
+lib.print_python_bytes(l);
+julien@ubuntu:~/CPython$ python3 103-tests.py 
+[.] bytes object info
+  size: 5
+  trying string: Hello
+  first 6 bytes: 48 65 6c 6c 6f 00
+[.] bytes object info
+  size: 8
+  trying string: �
+  first 9 bytes: ff f8 00 00 00 00 00 00 00
+[.] bytes object info
+  size: 60
+  trying string: What does the &#39;b&#39; character do in front of a string literal?
+  first 10 bytes: 57 68 61 74 20 64 6f 65 73 20
+[*] Python list info
+[*] Size of the Python List = 2
+[*] Allocated = 2
+Element 0: bytes
+[.] bytes object info
+  size: 5
+  trying string: Hello
+  first 6 bytes: 48 65 6c 6c 6f 00
+Element 1: bytes
+[.] bytes object info
+  size: 5
+  trying string: World
+  first 6 bytes: 57 6f 72 6c 64 00
+[*] Python list info
+[*] Size of the Python List = 1
+[*] Allocated = 2
+Element 0: bytes
+[.] bytes object info
+  size: 5
+  trying string: Hello
+  first 6 bytes: 48 65 6c 6c 6f 00
+[*] Python list info
+[*] Size of the Python List = 8
+[*] Allocated = 8
+Element 0: bytes
+[.] bytes object info
+  size: 5
+  trying string: Hello
+  first 6 bytes: 48 65 6c 6c 6f 00
+Element 1: int
+Element 2: int
+Element 3: float
+Element 4: tuple
+Element 5: list
+Element 6: bytes
+[.] bytes object info
+  size: 9
+  trying string: Holberton
+  first 10 bytes: 48 6f 6c 62 65 72 74 6f 6e 00
+Element 7: str
+[*] Python list info
+[*] Size of the Python List = 0
+[*] Allocated = 0
+[*] Python list info
+[*] Size of the Python List = 1
+[*] Allocated = 4
+Element 0: int
+[*] Python list info
+[*] Size of the Python List = 5
+[*] Allocated = 8
+Element 0: int
+Element 1: int
+Element 2: int
+Element 3: int
+Element 4: int
+[*] Python list info
+[*] Size of the Python List = 4
+[*] Allocated = 8
+Element 0: int
+Element 1: int
+Element 2: int
+Element 3: int
+[*] Python list info
+[*] Size of the Python List = 1
+[*] Allocated = 1
+Element 0: str
+[.] bytes object info
+  [ERROR] Invalid Bytes Object
+julien@ubuntu:~/CPython$ 
+</code></pre>
+
+
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holbertonschool-higher_level_programming</code></li>
+        <li>Directory: <code>0x04-python-more_data_structures</code></li>
+        <li>File: <code>103-python.c</code></li>
+    </ul>
+
+
+
+  
+      
+</div>
+
+        </div>
+  </section>
+
+
+
+
+
+
+      </article>
+
+    </main>
+
+
+
+
+
+    
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-67152800-6', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+  </body>
+</html>
+
