@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-def search_replace(my_list, search, replace)
+def mutiply_list_map(my_list=[], number=0):
+    return (list(map(lambda x: x * number, my_list)))
