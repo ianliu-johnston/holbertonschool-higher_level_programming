@@ -7,6 +7,10 @@ All about handling exceptions.
 ## Helpful Links
 * [link](https://docs.python.org/3.4/tutorial/errors.html)
 * [link](https://www.youtube.com/watch?v=7vbgD-3s-w4)
+* [link](http://www.python-course.eu/python3_exception_handling.php)
+* [link](https://www.programiz.com/python-programming/exception-handling)
+* [link](https://www.tutorialspoint.com/python/python_exceptions.htm)
+* [link](https://wiki.python.org/moin/HandlingExceptions)
 
 ## Description of Files
 <h6>0-safe_print_list.py</h6>
