@@ -32,7 +32,7 @@ while read c; do
 	I=$(($I+1))
 	PROTO=$(echo $c | rev | cut -c 2- | rev)
 	NAME=$(echo $c | cut -d '(' -f 1 | rev | cut -d ' ' -f1 | rev)
-	sed -i "s/REPLACE/$PROTO/g" $(ls -1 | grep "[0-9]-" | sort -h | grep -n "" | grep "$I:" | cut -d : -f2)
+	sed -i "s/REPLACE/$PROTO/g;s/&quot;/\"/g" $(ls -1 | grep "[0-9]-" | sort -h | grep -n "" | grep "$I:" | cut -d : -f2)
 	sed -i "s/main - /$NAME - /g" $(ls -1 | grep "[0-9]-" | sort -h | grep -n "" | grep "$I:" | cut -d : -f2)
 done<prototypes
 rm prototypes
