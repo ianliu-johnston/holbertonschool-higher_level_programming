@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-def uniq_add(my_list=[])
+def weight_average(my_list=[]):
+    tmp = []
+    for x, y in my_list:
+        tmp.append(x * y)
     return (0)
