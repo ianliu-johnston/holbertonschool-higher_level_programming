@@ -20,8 +20,6 @@ void print_python_float(PyObject *p)
 /**
   * print_python_bytes - Prints information about python byte objects
   * @p: PyObject pointer to print info about
- (* size = PyBytes_GET_SIZE(p);
- (* str = PyBytes_AS_STRING(p);
   */
 void print_python_bytes(PyObject *p)
 {
