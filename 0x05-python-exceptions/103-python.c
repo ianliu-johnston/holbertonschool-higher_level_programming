@@ -1,6 +1,6 @@
 #include "Python.h"
 /*
- * macro that replicates the functionality of Py_SIZE
+ * macro that replicates the functionality of
  */
 #define custom_py_size(op) (((PyVarObject *)(op))->ob_size)
 /**
