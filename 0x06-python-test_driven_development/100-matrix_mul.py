@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-Prototype
+Prototype:
+    return (0)
+print(Prototype)
