@@ -1,5 +1,8 @@
-The 0-add_integer Module:
+The Add_Integer Module:
+=======================
+
     >>> add_integer = __import__("0-add_integer").add_integer
+
 Make Sure Documentation Exists:
 
     >>> module_documentation = __import__("0-add_integer").__doc__
@@ -15,8 +18,39 @@ Correct Usage:
     >>> print(add_integer(1, 2))
     3
 
-On Errors:
+    >>> print(add_integer(100, -2))
+    98
 
+    >>> print(add_integer(100.3, -2))
+    98
+
+    >>> print(add_integer(-100.3, -2))
+    -102
+
+    >>> print(add_integer(2**3, -2))
+    6
+
+    >>> print(add_integer(8**0.3, -2))
+    -1
+
+
+On Errors:
     >>> print(add_integer(4, "School"))
     Traceback (most recent call last):
     TypeError: b must be an integer
+
+    >>> print(add_integer("Holberton", "School"))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer(None, 3))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer([1, 2, 3], 3))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> print(add_integer(foo(3), -2))
+    Traceback (most recent call last):
+    NameError: name 'foo' is not defined
