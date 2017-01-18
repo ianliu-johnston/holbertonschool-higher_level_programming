@@ -3,6 +3,9 @@ Introduction to writing tests for python programs
 
 ## New commands / functions used:
 * ``import doctest``
+* ``python3 -c 'print(__import__("my_module").__doc__)'`` -- Checks to see if the module has documentation.
+* ``python3 -c 'print(__import__("my_module").my_function.__doc__)'`` -- Checks to see if the function in the module has documentation.
+* ``python3 -m doctest -v ./tests/0-add_integer.txt``
 
 ## Helpful Links
 * [Python Docs: doctest](https://docs.python.org/3.4/library/doctest.html)
