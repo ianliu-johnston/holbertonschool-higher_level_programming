@@ -1,0 +1,22 @@
+The 3-say_my_name Module:
+    >>> add_integer = __import__("3-say_my_name").say_my_name
+Make Sure Documentation Exists:
+
+    >>> module_documentation = __import__("3-say_my_name").__doc__
+    >>> print(len(module_documentation) > 0)
+    True
+
+    >>> function_documentation = __import__("3-say_my_name").say_my_name.__doc__
+    >>> print(len(function_documentation) > 0)
+    True
+
+Correct Usage:
+
+    >>> print(say_my_name(1, 2))
+    3
+
+On Errors:
+
+    >>> print(say_my_name(4, "School"))
+    Traceback (most recent call last):
+    TypeError: b must be an integer

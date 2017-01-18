@@ -1,0 +1,22 @@
+The 2-matrix_divided Module:
+    >>> add_integer = __import__("2-matrix_divided").matrix_divided
+Make Sure Documentation Exists:
+
+    >>> module_documentation = __import__("2-matrix_divided").__doc__
+    >>> print(len(module_documentation) > 0)
+    True
+
+    >>> function_documentation = __import__("2-matrix_divided").matrix_divided.__doc__
+    >>> print(len(function_documentation) > 0)
+    True
+
+Correct Usage:
+
+    >>> print(matrix_divided(1, 2))
+    3
+
+On Errors:
+
+    >>> print(matrix_divided(4, "School"))
+    Traceback (most recent call last):
+    TypeError: b must be an integer

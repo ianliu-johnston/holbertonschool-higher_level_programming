@@ -1,0 +1,22 @@
+The 100-matrix_mul Module:
+    >>> add_integer = __import__("100-matrix_mul").Prototype
+Make Sure Documentation Exists:
+
+    >>> module_documentation = __import__("100-matrix_mul").__doc__
+    >>> print(len(module_documentation) > 0)
+    True
+
+    >>> function_documentation = __import__("100-matrix_mul").Prototype.__doc__
+    >>> print(len(function_documentation) > 0)
+    True
+
+Correct Usage:
+
+    >>> print(Prototype(1, 2))
+    3
+
+On Errors:
+
+    >>> print(Prototype(4, "School"))
+    Traceback (most recent call last):
+    TypeError: b must be an integer

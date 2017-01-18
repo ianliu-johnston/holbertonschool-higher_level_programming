@@ -1,0 +1,22 @@
+The 0-add_integer Module:
+    >>> add_integer = __import__("0-add_integer").add_integer
+Make Sure Documentation Exists:
+
+    >>> module_documentation = __import__("0-add_integer").__doc__
+    >>> print(len(module_documentation) > 0)
+    True
+
+    >>> function_documentation = __import__("0-add_integer").add_integer.__doc__
+    >>> print(len(function_documentation) > 0)
+    True
+
+Correct Usage:
+
+    >>> print(add_integer(1, 2))
+    3
+
+On Errors:
+
+    >>> print(add_integer(4, "School"))
+    Traceback (most recent call last):
+    TypeError: b must be an integer
