@@ -43,6 +43,22 @@ Incorrect Usage:
     Traceback (most recent call last):
     ZeroDivisionError: division by zero
 
+    >>> matrix = []
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix = [[]]
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix = None
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+
     >>> matrix = [[1, 2, 3], [4, 5, 6], {7, 8, 9}]
     >>> print(matrix_divided(matrix, 2))
     Traceback (most recent call last):

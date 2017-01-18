@@ -1,6 +1,6 @@
 The 5-text_indentation Module:
 
-    >>> add_integer = __import__("5-text_indentation").text_indentation
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
 
 Make Sure Documentation Exists:
 
