@@ -20,6 +20,7 @@ Safely adds integers. Function will raise an error if input is not an integer or
 Writing test cases for the module 1-mul.py
 
 <h6>2-matrix_divided.py</h6>
+Divides all elements of a matrix by div.
 
 <h6>3-say_my_name.py</h6>
 

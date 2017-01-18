@@ -1,0 +1,16 @@
+    >>> print(mul({4, 5, 6}, (1, 2)))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'set' and 'tuple'
+    >>> print(mul({4, 5, 6}, [1, 2, 3]))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'set' and 'list'
+
+
+    >>> print(mul({1:"hello",2:"goodbye", "Fizz":3}, (1, 2)))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'dict' and 'tuple'
+
+    >>> print(mul({1:"hello", 2:"goodbye", "Fizz":3}, [1, 2, 3]))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'dict' and 'list'
+

@@ -1,5 +1,6 @@
 The 4-print_square Module:
-    >>> add_integer = __import__("4-print_square").print_square
+    >>> print_square = __import__("4-print_square").print_square
+
 Make Sure Documentation Exists:
 
     >>> module_documentation = __import__("4-print_square").__doc__
@@ -12,11 +13,34 @@ Make Sure Documentation Exists:
 
 Correct Usage:
 
-    >>> print(print_square(1, 2))
-    3
+    >>> print_square(1)
+    #
+
+    >>> print_square(0)
+    <BLANKLINE>
+
+    >>> print_square(3)
+    ###
+    ###
+    ###
+
+    >>> print_square(5)
+    #####
+    #####
+    #####
+    #####
+    #####
 
 On Errors:
 
-    >>> print(print_square(4, "School"))
+    >>> print(print_square(None))
     Traceback (most recent call last):
-    TypeError: b must be an integer
+    TypeError: size must be an integer
+
+    >>> print(print_square(3.0))
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print(print_square(-3))
+    Traceback (most recent call last):
+    ValueError: size must be >= 0

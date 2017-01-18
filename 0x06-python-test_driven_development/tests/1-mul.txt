@@ -34,13 +34,10 @@ Correct Usage:
     >>> print(mul(5.0005, 2.0))
     10.001
 
-    >>> print(mul(2, True))
-    2
-
-    >>> print(mul(2, False))
+    >>> print(mul(0, 2))
     0
 
-    >>> print(mul(0, 2))
+    >>> print(mul(0, -2))
     0
 
     >>> print(mul(0, 0.3))
@@ -48,6 +45,33 @@ Correct Usage:
 
     >>> print(mul(5.0, 0))
     0.0
+
+    >>> print(mul(-5.0, 0))
+    -0.0
+
+    >>> print(mul(2, True))
+    2
+
+    >>> print(mul(2, False))
+    0
+
+    >>> print(mul(-2, True))
+    -2
+
+    >>> print(mul(-2, False))
+    0
+
+    >>> print(mul(2.2, True))
+    2.2
+
+    >>> print(mul(2.2, False))
+    0.0
+
+    >>> print(mul(-2.2, True))
+    -2.2
+
+    >>> print(mul(-2.2, False))
+    -0.0
 
     >>> print(mul(5, "ha"))
     hahahahaha
@@ -59,6 +83,32 @@ Correct Usage:
     [3, 4, 3, 4, 3, 4, 3, 4]
 
 On Errors:
+
+Generic: 
+
+    >>> print(mul(,0))
+    Traceback (most recent call last):
+    SyntaxError: invalid syntax
+    
+    >>> print(mul(,))
+    Traceback (most recent call last):
+    SyntaxError: invalid syntax
+
+    >>>     print(mul(,0))
+    Traceback (most recent call last):
+    IndentationError: unexpected indent
+
+    >>> print(mul(foo, 3))
+    Traceback (most recent call last):
+    NameError: name 'foo' is not defined
+
+    >>> print(mul(1))
+    Traceback (most recent call last):
+    TypeError: mul() missing 1 required positional argument: 'b'
+
+    >>> print(mul(1, 3, 5))
+    Traceback (most recent call last):
+    TypeError: mul() takes 2 positional arguments but 3 were given
 
 For NoneTypes:
 
@@ -87,7 +137,7 @@ For NoneTypes:
     Traceback (most recent call last):
     TypeError: can't multiply sequence by non-int of type 'NoneType'
 
-For "can't multiply sequence by non-int of type" Tracebacks:
+For "TypeError: can't multiply sequence by non-int of type" Tracebacks:
 
     >>> print(mul("ooh", "lala"))
     Traceback (most recent call last):
@@ -109,7 +159,9 @@ For "can't multiply sequence by non-int of type" Tracebacks:
     Traceback (most recent call last):
     TypeError: can't multiply sequence by non-int of type 'dict'
 
-For "unsupported operand type(s) for *:" Tracebacks:
+For "TypeError: unsupported operand type(s) for *:" Tracebacks:
+
+Sets:
 
     >>> print(mul({1,3,4}, 2))
     Traceback (most recent call last):
@@ -119,14 +171,41 @@ For "unsupported operand type(s) for *:" Tracebacks:
     Traceback (most recent call last):
     TypeError: unsupported operand type(s) for *: 'set' and 'float'
 
+    >>> print(mul({1,3,4}, True))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'set' and 'bool'
+
     >>> print(mul({1,2,3}, None))
     Traceback (most recent call last):
     TypeError: unsupported operand type(s) for *: 'set' and 'NoneType'
 
-    >> print(mul({1,2,3}, {4, 5, 6}))
+    >>> print(mul({1,2,3}, {4, 5, 6}))
     Traceback (most recent call last):
     TypeError: unsupported operand type(s) for *: 'set' and 'set'
+
+Dicts:
 
     >>> print(mul({1:"hello", 3:"Fizz", "list":[1,2,3]}, 2))
     Traceback (most recent call last):
     TypeError: unsupported operand type(s) for *: 'dict' and 'int'
+
+    >>> print(mul({1:"hello", 3:"Fizz", "list":[1,2,3]}, 2.3))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'dict' and 'float'
+
+    >>> print(mul({1:"hello", 3:"Fizz", "list":[1,2,3]}, True))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'dict' and 'bool'
+
+    >>> print(mul({1:"hello", 3:"Fizz", "list":[1,2,3]}, None))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'dict' and 'NoneType'
+
+    >>> print(mul({1:"hello", 3:"Fizz", "list":[1,2,3]}, {1:"hello", 2:"goodbye"}))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'dict' and 'dict'
+
+    >>> print(mul({1:"hello",2:"goodbye", "Fizz":3}, {4, 5, 6}))
+    Traceback (most recent call last):
+    TypeError: unsupported operand type(s) for *: 'dict' and 'set'
+

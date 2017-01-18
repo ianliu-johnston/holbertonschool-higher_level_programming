@@ -1,5 +1,6 @@
 The 3-say_my_name Module:
-    >>> add_integer = __import__("3-say_my_name").say_my_name
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+
 Make Sure Documentation Exists:
 
     >>> module_documentation = __import__("3-say_my_name").__doc__
@@ -12,11 +13,14 @@ Make Sure Documentation Exists:
 
 Correct Usage:
 
-    >>> print(say_my_name(1, 2))
-    3
+    >>> print(say_my_name("Holberton", "School"))
+    My name is Holberton School
+
+    >>> print(say_my_name("Ian"))
+    My name is Ian
 
 On Errors:
 
-    >>> print(say_my_name(4, "School"))
+    >>> print(say_my_name(1, 2))
     Traceback (most recent call last):
-    TypeError: b must be an integer
+    TypeError: first_name must be a string
