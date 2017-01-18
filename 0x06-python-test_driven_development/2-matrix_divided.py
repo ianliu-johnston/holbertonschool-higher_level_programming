@@ -26,10 +26,9 @@ def matrix_divided(matrix, div):
     wrong_type = "matrix must be a matrix (list of lists) of integers/floats"
     wrong_size = "Each row of the matrix must have the same size"
     new_matrix = []
-    try:
-        previous = len(matrix[0])
-    except TypeError(wrong_type):
-        raise
+    if matrix is None or len(matrix) is 0 or len(matrix[0]) is 0:
+        raise TypeError(wrong_type)
+    previous = len(matrix[0])
 
     try:
         for count, row in enumerate(matrix):

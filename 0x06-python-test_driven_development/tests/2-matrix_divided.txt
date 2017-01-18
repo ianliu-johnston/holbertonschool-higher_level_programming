@@ -29,6 +29,10 @@ Correct Usage:
     >>> print(matrix_divided(matrix, True))
     [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
 
+    >>> matrix = [[1, 2, 3]]
+    >>> print(matrix_divided(matrix, 1))
+    [[1.0, 2.0, 3.0]]
+
 Incorrect Usage:
 
     >>> print(matrix_divided(matrix, None))
@@ -56,7 +60,7 @@ Incorrect Usage:
     >>> matrix = None
     >>> print(matrix_divided(matrix, 2))
     Traceback (most recent call last):
-    TypeError: div must be a number
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 
     >>> matrix = [[1, 2, 3], [4, 5, 6], {7, 8, 9}]
