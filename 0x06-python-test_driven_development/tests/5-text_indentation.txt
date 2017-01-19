@@ -12,13 +12,72 @@ Make Sure Documentation Exists:
     >>> print(len(function_documentation) > 0)
     True
 
+    >>> t="Hello. I am a string? Here is what you should do: parse me."
+
 Correct Usage:
 
-    >>> print(text_indentation(1, 2))
-    3
+    >>> text_indentation(t)
+    Hello.
+    <BLANKLINE>
+    I am a string?
+    <BLANKLINE>
+    Here is what you should do:
+    <BLANKLINE>
+    parse me.
+    <BLANKLINE>
+    <BLANKLINE>
+
+    >>> t="Hello. : \nI am a string? .\n"
+    >>> text_indentation(t)
+    Hello.
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    <BLANKLINE>
+    I am a string?
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+
+    >>> t=" : . ? "
+    >>> text_indentation(t)
+    :
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    <BLANKLINE>
+
+    >>> t = "    MY SPOON IS TOO BIG!...    I am a banana.\n     blearg    "
+    >>> text_indentation(t)
+    MY SPOON IS TOO BIG!.
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    I am a banana.
+    <BLANKLINE>
+    <BLANKLINE>
+    blearg
+
+    >>> t = "Mwa" + "ha" * 2 + u'\u2020'
+    >>> text_indentation(t)
+    Mwahaha†
 
 On Errors:
 
-    >>> print(text_indentation(4, "School"))
+    >>> text_indentation(4)
     Traceback (most recent call last):
-    TypeError: b must be an integer
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation(-4)
+    Traceback (most recent call last):
+    TypeError: text must be a string
