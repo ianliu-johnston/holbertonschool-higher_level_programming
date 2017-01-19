@@ -82,6 +82,12 @@ Correct Usage:
     >>> print(mul([3, 4], 4))
     [3, 4, 3, 4, 3, 4, 3, 4]
 
+    >>> mul(1e10000, 1e10000)
+    inf
+
+    >>> mul(float("inf"), float("inf"))
+    inf
+
 On Errors:
 
 Generic: 
