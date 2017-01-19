@@ -61,7 +61,17 @@ Correct Usage:
     >>> text_indentation(t)
     Mwahaha
 
+    >>> text_indentation("")
+
 On Errors:
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+    >>> text_indentation("ble", "ooh", "wah")
+    Traceback (most recent call last):
+    TypeError: text_indentation() takes 1 positional argument but 3 were given
 
     >>> text_indentation(4)
     Traceback (most recent call last):
