@@ -23,10 +23,13 @@ Writing test cases for the module 1-mul.py
 Divides all elements of a matrix by div.
 
 <h6>3-say_my_name.py</h6>
+Prints first_name and last_name
 
 <h6>4-print_square.py</h6>
+Prints a square
 
 <h6>5-text_indentation.py</h6>
+Prints 2 new lines with each of these characters: ``.``, ``?``, and ``:``. Raises an exception if input is not a string.
 
 <h6>100-matrix_mul.py</h6>
 
