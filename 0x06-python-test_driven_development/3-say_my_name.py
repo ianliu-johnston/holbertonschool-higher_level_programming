@@ -15,5 +15,7 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("first_name must be a string")
     elif not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
-    whole = first_name + " " + last_name
-    return ("My name is {}".format(whole))
+    try:
+        return ("My name is {} {}".format(first_name, last_name))
+    except:
+        raise

@@ -25,8 +25,8 @@ Correct Usage:
     >>> print(say_my_name("", ""))
     My name is  
 
-    >>> print(say_my_name("Dan Quail"))
-    My name is Dan Quail 
+    >>> print(say_my_name("Don Quail"))
+    My name is Don Quail 
 
 On Errors:
 
@@ -37,6 +37,15 @@ On Errors:
     >>> print(say_my_name("Stop", "hammer", "time"))
     Traceback (most recent call last):
     TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+    >>> print(say_my_name(None, 2))
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> print(say_my_name(None, 2))
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
     >>> print(say_my_name(1, 2))
     Traceback (most recent call last):
     TypeError: first_name must be a string
@@ -44,3 +53,15 @@ On Errors:
     >>> print(say_my_name("Stumbly", 2))
     Traceback (most recent call last):
     TypeError: last_name must be a string
+
+    >>> print(say_my_name(1, "Wumbly"))
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> print(say_my_name("Stumbly", (2, 3)))
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+    >>> print(say_my_name((1, 2), "Wumbly"))
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
