@@ -18,7 +18,6 @@ Correct Usage:
     <BLANKLINE>
     parse me.
     <BLANKLINE>
-    <BLANKLINE>
 
     >>> t="Hello. : \nI am a string? .\n"
     >>> text_indentation(t)
@@ -32,7 +31,6 @@ Correct Usage:
     .
     <BLANKLINE>
     <BLANKLINE>
-    <BLANKLINE>
 
     >>> t=" : . ? "
     >>> text_indentation(t)
@@ -41,7 +39,6 @@ Correct Usage:
     .
     <BLANKLINE>
     ?
-    <BLANKLINE>
     <BLANKLINE>
 
     >>> t = "    MY SPOON IS TOO BIG!...    I am a banana.\n     blearg    "
