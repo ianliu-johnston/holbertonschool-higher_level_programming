@@ -19,6 +19,9 @@ Correct Usage:
     >>> print(say_my_name("Beeyach"))
     My name is Beeyach 
 
+    >>> print(say_my_name("Holberton", "Beach Party"))
+    My name is Holberton Beach Party 
+
     >>> print(say_my_name(""))
     My name is  
 
