@@ -3,6 +3,8 @@
 Module: say_my_name
 Simply prints out a first and last name if both are strings.
 """
+
+
 def say_my_name(first_name, last_name=""):
     """
     say_my_name prints out the input strings prepended with "My name is".
