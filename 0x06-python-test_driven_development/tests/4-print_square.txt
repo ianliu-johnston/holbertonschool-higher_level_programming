@@ -16,8 +16,12 @@ Correct Usage:
     >>> print_square(1)
     #
 
+    >>> print_square(True)
+    #
+
     >>> print_square(0)
-    <BLANKLINE>
+
+    >>> print_square(False)
 
     >>> print_square(3)
     ###
@@ -41,10 +45,6 @@ On Errors:
     Traceback (most recent call last):
     TypeError: print_square() takes 1 positional argument but 3 were given
 
-    >>> print(print_square("Not a square"))
-    Traceback (most recent call last):
-    TypeError: size must be an integer
-
     >>> print(print_square(None))
     Traceback (most recent call last):
     TypeError: size must be an integer
@@ -62,5 +62,25 @@ On Errors:
     ValueError: size must be >= 0
 
     >>> print(print_square(2e8000))
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print(print_square("Not a square"))
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print(print_square((2, 2)))
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print(print_square([2, 2]))
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print(print_square({2, 3}))
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print(print_square({2:"hi", 3:"bye"}))
     Traceback (most recent call last):
     TypeError: size must be an integer
