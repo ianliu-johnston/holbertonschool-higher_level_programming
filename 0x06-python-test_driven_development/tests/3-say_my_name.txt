@@ -1,64 +1,46 @@
-The 3-say_my_name Module:
-    >>> say_my_name = __import__("3-say_my_name").say_my_name
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
+	>>> print(__import__("3-say_my_name").__doc__)
+	<BLANKLINE>
+	3-say_my_name
+	<BLANKLINE>
+	1 function:
+	say_my_name
+	<BLANKLINE>
+	>>> print(__import__("3-say_my_name").say_my_name.__doc__)
+	<BLANKLINE>
+	    say_my_name: print out first_name and last_name
+	    first_name: string
+	    last_name: string
+        <BLANKLINE>
+            exceptions:
+            TypeError: if either input is not a string
+	<BLANKLINE>
+	>>> say_my_name("Holden", "van Russom")
+	My name is Holden van Russom
+	>>> say_my_name("Holden", "")
+	My name is Holden 
+	>>> say_my_name(12, "Grissett")
+	Traceback (most recent call last):
+		  ...
+	TypeError: first_name must be a string
+	>>> say_my_name("Holden", ["Finicky"])
+	Traceback (most recent call last):
+		  ...
+	TypeError: last_name must be a string
+	>>> say_my_name(None, None)
+	Traceback (most recent call last):
+		  ...
+	TypeError: first_name must be a string
+	>>> say_my_name()
+	Traceback (most recent call last):
+		  ...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+	>>> say_my_name("Guido", "van", "Russom")
+	Traceback (most recent call last):
+		  ...
+	TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+	>>> say_my_name()
+	Traceback (most recent call last):
+		  ...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
 
-Make Sure Documentation Exists:
-
-    >>> module_documentation = __import__("3-say_my_name").__doc__
-    >>> len(module_documentation) > 0)
-    True
-
-    >>> function_documentation = __import__("3-say_my_name").say_my_name.__doc__
-    >>> len(function_documentation) > 0)
-    True
-
-Correct Usage:
-
-    >>> say_my_name("Holberton", "School")
-    My name is Holberton School
-
-    >>> say_my_name("Beeyach")
-    My name is Beeyach 
-
-    >>> say_my_name("Holberton", "Beach Party")
-    My name is Holberton Beach Party
-
-    >>> say_my_name("Don Quail")
-    My name is Don Quail 
-
-On Errors:
-
-    >>> say_my_name()
-    Traceback (most recent call last):
-    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
-
-    >>> say_my_name("Stop", "hammer", "time")
-    Traceback (most recent call last):
-    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
-
-    >>> say_my_name(None, 2)
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
-
-    >>> say_my_name(None, 2)
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
-
-    >>> say_my_name(1, 2)
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
-
-    >>> say_my_name("Stumbly", 2)
-    Traceback (most recent call last):
-    TypeError: last_name must be a string
-
-    >>> say_my_name(1, "Wumbly")
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
-
-    >>> say_my_name("Stumbly", (2, 3))
-    Traceback (most recent call last):
-    TypeError: last_name must be a string
-
-    >>> say_my_name((1, 2), "Wumbly")
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
