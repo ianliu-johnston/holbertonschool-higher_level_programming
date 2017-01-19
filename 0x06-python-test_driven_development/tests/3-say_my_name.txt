@@ -20,12 +20,9 @@ Correct Usage:
     My name is Beeyach 
 
     >>> print(say_my_name("Holberton", "Beach Party"))
-    My name is Holberton Beach Party 
+    My name is Holberton Beach Party
 
     >>> print(say_my_name(""))
-    My name is  
-
-    >>> print(say_my_name("", ""))
     My name is  
 
     >>> print(say_my_name("Don Quail"))
