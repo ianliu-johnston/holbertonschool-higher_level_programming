@@ -2,19 +2,12 @@ The 5-text_indentation Module:
 
     >>> text_indentation = __import__("5-text_indentation").text_indentation
 
-Make Sure Documentation Exists:
-
-    >>> module_documentation = __import__("5-text_indentation").__doc__
-    >>> print(len(module_documentation) > 0)
-    True
-
-    >>> function_documentation = __import__("5-text_indentation").text_indentation.__doc__
-    >>> print(len(function_documentation) > 0)
-    True
-
     >>> t="Hello. I am a string? Here is what you should do: parse me."
 
 Correct Usage:
+
+    >>> text_indentation("Howdy, Yall!")
+    Howdy, Yall!
 
     >>> text_indentation(t)
     Hello.
