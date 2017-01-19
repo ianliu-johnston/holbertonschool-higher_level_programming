@@ -64,9 +64,9 @@ Correct Usage:
     <BLANKLINE>
     blearg
 
-    >>> t = "Mwa" + "ha" * 2 + u'\u2020'
+    >>> t = "Mwa" + "ha" * 2
     >>> text_indentation(t)
-    MwahahaͰ
+    Mwahaha
 
 On Errors:
 
