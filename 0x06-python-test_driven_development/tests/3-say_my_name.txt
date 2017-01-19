@@ -22,9 +22,6 @@ Correct Usage:
     >>> say_my_name("Holberton", "Beach Party")
     My name is Holberton Beach Party
 
-    >>> say_my_name("")
-    My name is  
-
     >>> say_my_name("Don Quail")
     My name is Don Quail 
 
