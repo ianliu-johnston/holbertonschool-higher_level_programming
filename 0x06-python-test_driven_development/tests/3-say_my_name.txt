@@ -1,17 +1,7 @@
 The 3-say_my_name Module:
+========================
+
     >>> say_my_name = __import__("3-say_my_name").say_my_name
-
-Make Sure Documentation Exists:
-
-    >>> module_documentation = __import__("3-say_my_name").__doc__
-    >>> len(module_documentation) > 0)
-    True
-
-    >>> function_documentation = __import__("3-say_my_name").say_my_name.__doc__
-    >>> len(function_documentation) > 0)
-    True
-
-Correct Usage:
 
     >>> say_my_name("Holberton", "School")
     My name is Holberton School
@@ -24,8 +14,6 @@ Correct Usage:
 
     >>> say_my_name("Don Quail")
     My name is Don Quail 
-
-On Errors:
 
     >>> say_my_name()
     Traceback (most recent call last):
