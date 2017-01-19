@@ -16,11 +16,24 @@ Correct Usage:
     >>> print(say_my_name("Holberton", "School"))
     My name is Holberton School
 
-    >>> print(say_my_name("Ian"))
-    My name is Ian
+    >>> print(say_my_name("Beeyach"))
+    My name is Beeyach 
+
+    >>> print(say_my_name(""))
+    My name is  
+
+    >>> print(say_my_name("", ""))
+    My name is  
+
+    >>> print(say_my_name("Dan Quail"))
+    My name is Dan Quail 
 
 On Errors:
 
     >>> print(say_my_name(1, 2))
     Traceback (most recent call last):
     TypeError: first_name must be a string
+
+    >>> print(say_my_name("Stumbly", 2))
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
