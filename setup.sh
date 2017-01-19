@@ -24,10 +24,9 @@ echo "REPLACE" >> py_template
 echo "    return (0)" >> py_template
 echo "print(REPLACE)" >> py_template
 echo '#!/bin/bash' > sh_template
-echo "The TEST Module:" > test_template
-echo "    >>> add_integer = __import__(\"TEST\").TEST_FXN" >> test_template
-echo "Make Sure Documentation Exists:" >> test_template
-echo "" >> test_template
+echo -e "The TEST Module:\n" > test_template
+echo "    >>> TEST_FXN = __import__(\"TEST\").TEST_FXN" >> test_template
+echo -e "\nMake Sure Documentation Exists:\n" >> test_template
 echo "    >>> module_documentation = __import__(\"TEST\").__doc__" >> test_template
 echo "    >>> print(len(module_documentation) > 0)" >> test_template
 echo "    True" >> test_template
