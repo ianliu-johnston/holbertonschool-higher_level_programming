@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-REPLACE
-    return (0)
-print(REPLACE)
+class Square:
+    def __init__(self, size):
+        self.__size = size
