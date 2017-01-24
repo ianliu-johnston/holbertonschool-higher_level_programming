@@ -1,24 +1,35 @@
-The TEST Module:
+The Square Module:
 
-    >>> TEST_FXN = __import__("TEST").TEST_FXN
-
-Make Sure Documentation Exists:
-
-    >>> module_documentation = __import__("TEST").__doc__
-    >>> print(len(module_documentation) > 0)
-    True
-
-    >>> function_documentation = __import__("TEST").TEST_FXN.__doc__
-    >>> print(len(function_documentation) > 0)
-    True
+    >>> Square = __import__("4-square").Square
 
 Correct Usage:
 
-    >>> print(TEST_FXN(1, 2))
-    3
+    >>> my_square = Square(25)
+    >>> print("{:d}".format(my_square.size))
+    25
+    >>> print('{}'.format(my_square.area()))
+    625
+
+    >>> my_square.size = 5
+    >>> print("{:d}".format(my_square.size))
+    5
+    >>> print('{:d}'.format(my_square.area()))
+    25
 
 On Errors:
 
-    >>> print(TEST_FXN(4, "School"))
+    >>> my_square.size = "Five"
     Traceback (most recent call last):
-    TypeError: b must be an integer
+    TypeError: size must be an integer
+
+    >>> my_square.size = -5
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+    >>> new_square = Square("25 Feet")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> new_square = Square(-1)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
