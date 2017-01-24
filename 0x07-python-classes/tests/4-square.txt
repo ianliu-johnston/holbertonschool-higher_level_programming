@@ -4,11 +4,11 @@ The Square Module:
 
 Correct Usage:
 
-    >>> my_square = Square()
-    >>> print("{:d}".format(my_square.size))
+    >>> square = Square()
+    >>> print("{:d}".format(square.size))
     0
-    >>> print('{:d}'.format(my_square.area()))
-    0 
+    >>> print('{}'.format(square.area()))
+    0
 
     >>> my_square = Square(25)
     >>> print("{:d}".format(my_square.size))
@@ -31,6 +31,16 @@ On Errors:
     >>> my_square.size = -5
     Traceback (most recent call last):
     ValueError: size must be >= 0
+
+    >>> print(my_square.__size)
+    Traceback (most recent call last):
+    AttributeError: 'Square' object has no attribute '__size'
+
+    >>> print(my_square.__dict__)
+    {'_Square__size': 5}
+
+    >>> print(type(my_square))
+    <class '4-square.Square'>
 
     >>> new_square = Square("25 Feet")
     Traceback (most recent call last):
