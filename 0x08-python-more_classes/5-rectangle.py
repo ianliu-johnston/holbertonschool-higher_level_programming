@@ -11,10 +11,12 @@ class Rectangle:
         self.__height = height
 
     def __str__(self):
-        return ("\n".join(["".join(["#" for y in range(self.__width)]) for x in range(self.__height)]))
+        return ("\n".join(["".join(["#" for y in range(self.__width)])
+                           for x in range(self.__height)]))
 
     def __repr__(self):
-        return "Rectangle(" + "{:d}".format(self.__width) + ", "  + "{:d}".format(self.__height) + ")"
+        return ("Rectangle(" + "{:d}".format(self.__width) + ", " +
+                "{:d}".format(self.__height) + ")")
 
     def __del__(self):
         print("Bye rectangle...")

@@ -11,7 +11,8 @@ class Rectangle:
         self.__height = height
 
     def __str__(self):
-        return ("\n".join(["".join(["#" for y in range(self.__width)]) for x in range(self.__height)]))
+        return ("\n".join(["".join(["#" for y in range(self.__width)])
+                           for x in range(self.__height)]))
 
     @property
     def width(self):
