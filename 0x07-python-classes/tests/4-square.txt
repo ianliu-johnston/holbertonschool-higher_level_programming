@@ -4,6 +4,12 @@ The Square Module:
 
 Correct Usage:
 
+    >>> my_square = Square()
+    >>> print("{:d}".format(my_square.size))
+    0
+    >>> print('{:d}'.format(my_square.area()))
+    0 
+
     >>> my_square = Square(25)
     >>> print("{:d}".format(my_square.size))
     25
