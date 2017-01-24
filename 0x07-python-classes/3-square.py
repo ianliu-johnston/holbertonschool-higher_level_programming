@@ -1,5 +1,13 @@
 #!/usr/bin/python3
+"""
+Super simple Square Module.
+"""
+
+
 class Square:
+    """
+    Only does one thing: Gives you its area.
+    """
     def __init__(self, size=0):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -8,5 +16,5 @@ class Square:
         else:
             self.__size = size
     def area(self):
-        return (size * size)
+        return (self.__size ** 2 )
 
