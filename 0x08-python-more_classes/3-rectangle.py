@@ -11,8 +11,11 @@ class Rectangle:
         self.__height = height
 
     def __str__(self):
-        return ("\n".join(["".join(["#" for y in range(self.__width)])
+        if self.__width > 0 and self.__height > 0:
+            return ("\n".join(["".join(["#" for y in range(self.__width)])
                            for x in range(self.__height)]))
+        else:
+            return ("")
 
     @property
     def width(self):
@@ -42,4 +45,7 @@ class Rectangle:
         return(self.__width * self.__height)
 
     def perimeter(self):
-        return(self.__width * 2 + self.__height * 2)
+        if self.__width > 0 and self.__height > 0:
+            return(self.__width * 2 + self.__height * 2)
+        else:
+            return (0)
