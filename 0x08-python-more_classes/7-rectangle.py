@@ -15,9 +15,12 @@ class Rectangle:
         type(self).number_of_instances += 1
 
     def __str__(self):
-        return ("\n".join(["".join([self.print_symbol
-                           for y in range(self.__width)])
-                           for x in range(self.__height)]))
+        if self.__width > 0 and self.__height > 0:
+            return ("\n".join(["".join([self.print_symbol
+                               for y in range(self.__width)])
+                               for x in range(self.__height)]))
+        else:
+            return ("")
 
     def __repr__(self):
         return ("Rectangle(" + "{:d}".format(self.__width) + ", " +
