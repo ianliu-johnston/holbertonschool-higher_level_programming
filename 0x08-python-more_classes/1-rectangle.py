@@ -1,5 +1,17 @@
 #!/usr/bin/python3
+"""
+The Rectangle Module:
+
+
+"""
+
+
 class Rectangle:
+    """
+    The Rectangle Class:
+    Has two internal properties, and two methods to change them.
+    Optional arguments specify the width and height of the rectangle.
+    """
     def __init__(self, width=0, height=0):
         if not isinstance(width, int) or not isinstance(height, int):
             wrong = "width" if not isinstance(width, int) else "height"
@@ -13,6 +25,11 @@ class Rectangle:
     @property
     def width(self):
         return(self.__width)
+
+    @property
+    def height(self):
+        return(self.__height)
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -21,9 +38,6 @@ class Rectangle:
             raise TypeError("width must be an integer")
         self.__width = value
 
-    @property
-    def height(self):
-        return(self.__height)
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
