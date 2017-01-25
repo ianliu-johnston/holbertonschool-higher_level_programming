@@ -12,7 +12,7 @@ class Rectangle:
             raise ValueError(wrong + " must be >= 0")
         self.__width = width
         self.__height = height
-        type(self).number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         if self.__width > 0 and self.__height > 0:
@@ -23,11 +23,10 @@ class Rectangle:
             return ("")
 
     def __repr__(self):
-        return ("Rectangle(" + "{:d}".format(self.__width) + ", " +
-                "{:d}".format(self.__height) + ")")
+        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
 
     def __del__(self):
-        type(self).number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
     @property
@@ -55,7 +54,7 @@ class Rectangle:
         self.__height = value
 
     def change_symbol(sym):
-        type(self).print_symbol = sym
+        Rectangle.print_symbol = sym
 
     def area(self):
         return(self.__width * self.__height)
