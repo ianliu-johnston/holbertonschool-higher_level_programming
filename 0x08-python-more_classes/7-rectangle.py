@@ -53,9 +53,6 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
-    def change_symbol(sym):
-        Rectangle.print_symbol = sym
-
     def area(self):
         return(self.__width * self.__height)
 
