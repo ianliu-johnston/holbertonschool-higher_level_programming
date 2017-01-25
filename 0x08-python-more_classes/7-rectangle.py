@@ -16,7 +16,7 @@ class Rectangle:
 
     def __str__(self):
         if self.__width > 0 and self.__height > 0:
-            return ("\n".join(["".join([self.print_symbol
+            return ("\n".join(["".join([str(self.print_symbol)
                                for y in range(self.__width)])
                                for x in range(self.__height)]))
         else:
@@ -57,4 +57,7 @@ class Rectangle:
         return(self.__width * self.__height)
 
     def perimeter(self):
-        return(self.__width * 2 + self.__height * 2)
+        if self.__width > 0 and self.__height > 0:
+            return(self.__width * 2 + self.__height * 2)
+        else:
+            return (0)
