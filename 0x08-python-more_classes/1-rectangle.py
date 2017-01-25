@@ -11,12 +11,6 @@ class Rectangle:
     Optional arguments specify the width and height of the rectangle.
     """
     def __init__(self, width=0, height=0):
-        if not isinstance(width, int) or not isinstance(height, int):
-            wrong = "width" if not isinstance(width, int) else "height"
-            raise TypeError(wrong + " must be an integer")
-        if height < 0 or width < 0:
-            wrong = "width" if width < 0 else "height"
-            raise ValueError(wrong + " must be >= 0")
         self.__width = width
         self.__height = height
 
