@@ -12,7 +12,7 @@ class Rectangle:
 
     def __str__(self):
         if self.__width > 0 and self.__height > 0:
-            return ("\n".join(["".join([self.print_symbol
+            return ("\n".join(["".join(["#"
                                for y in range(self.__width)])
                                for x in range(self.__height)]))
         else:
