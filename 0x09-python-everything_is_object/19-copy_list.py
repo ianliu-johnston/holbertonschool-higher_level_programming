@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-REPLACE
-    return (0)
-print(REPLACE)
+def copy_list(l):
+    return (l[:])
+l = [1, 2, 3]
