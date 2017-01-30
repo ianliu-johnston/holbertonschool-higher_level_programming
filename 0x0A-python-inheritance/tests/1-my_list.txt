@@ -1,0 +1,24 @@
+The 1-my_list Module:
+
+    >>> is_same_class = __import__("1-my_list").is_same_class
+
+Make Sure Documentation Exists:
+
+    >>> module_documentation = __import__("1-my_list").__doc__
+    >>> print(len(module_documentation) > 0)
+    True
+
+    >>> function_documentation = __import__("1-my_list").is_same_class.__doc__
+    >>> print(len(function_documentation) > 0)
+    True
+
+Correct Usage:
+
+    >>> print(is_same_class(1, 2))
+    3
+
+On Errors:
+
+    >>> print(is_same_class(4, "School"))
+    Traceback (most recent call last):
+    TypeError: b must be an integer
