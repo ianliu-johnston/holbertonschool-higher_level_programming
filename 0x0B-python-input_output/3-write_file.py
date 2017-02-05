@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-def write_file(filename=REPLACEquot;REPLACEquot;, text=REPLACEquot;REPLACEquot;):
-    return (0)
-print(def write_file(filename=REPLACEquot;REPLACEquot;, text=REPLACEquot;REPLACEquot;))
+def write_file(filename="", text=""):
+    with open(filename, 'w', encoding="utf-8") as f:
+        total = f.write(text)
+    return total

@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-def append_write(filename=REPLACEquot;REPLACEquot;, text=REPLACEquot;REPLACEquot;):
-    return (0)
-print(def append_write(filename=REPLACEquot;REPLACEquot;, text=REPLACEquot;REPLACEquot;))
+def append_write(filename="", text=""):
+    with open(filename, 'a', encoding="utf-8") as f:
+        total = f.write(text)
+    return total
+
