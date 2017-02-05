@@ -40,18 +40,23 @@ Writes text to a file
 Appends text to a file
 
 <h6>5-to_json_string.py</h6>
-Converts a lala
+Returns a representation of the python object in JSON format
 
 <h6>6-from_json_string.py</h6>
+Returns an object represented by a JSON objects 
 
 <h6>7-save_to_json_file.py</h6>
+Save python objects into text files represented by JSON objects
 
 <h6>8-load_from_json_file.py</h6>
+Loads a Python object from a JSON file.
 
 <h6>9-add_item.py</h6>
+Adds all arguments to a Python list then saves them to a file.
 
 <h6>100-append_after.py</h6>
 
 <h6>101-stats.py</h6>
 
 <h6>read_write_heap.py</h6>
+
