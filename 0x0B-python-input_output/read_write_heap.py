@@ -5,9 +5,26 @@
 
 """
 import os
+import ctypes
 from sys import argv, exit
+
+c_ptrace = ctypes.CDLL("libc.so.6").ptrace
+c_pid_t = ctypes.c_int32
+c_ptrace.argtypes = [ctypes.c_int, c_pid_t, ctypes.c_void_p, ctypes.c_void_p]
+
+def ptrace(attach, pid):
+    op = ctypes.c_int(16 if attach else 17) # 16 = Attach, 17 = Detatch
+    c_pid = c_pid_t(pid)
+    null = ctypes.c_void_p()
+    err = c_ptrace(op, c_pid, null, null)
+    print("Good")
+    if err != 0:
+        print("Ptrace Error.")
+        exit(1)
+
+
 def check_args():
-    if len(argv) != 2:
+    if len(argv) != 3:
         print("{} pid search_string replace_string".format(argv[0]))
         exit(1)
     pid = argv[1]
@@ -28,9 +45,21 @@ def get_heap_memory_addr(pid=1):
             if not line:
                 break
         f.close()
+
+def get_strings(pid=1):
+    ptrace(True, int(pid))
+    with open("/proc/" + str(pid) + "/mem", 'r', 0) as f:
+        print("Ok")
+        line = f.readline()
+        while line:
+            line = f.readline()
+            if argv[2] in line:
+                print("OOh YEAH!!")
+            print(line)
     return "Error, no address found"
 
 if __name__ == "__main__":
     pid = check_args()
     memaddr = get_heap_memory_addr(pid)
+    get_strings(pid)
     print(memaddr)
