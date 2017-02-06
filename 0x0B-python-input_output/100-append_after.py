@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-def read_file(filename=REPLACEquot;REPLACEquot;):
+def append_after(filename="", search_string="", new_string=""):
     return (0)
-print(def read_file(filename=REPLACEquot;REPLACEquot;))
