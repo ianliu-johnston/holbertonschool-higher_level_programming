@@ -1,12 +1,12 @@
 #Holberton School - 0x0A-python-inheritance
-Description
+All about inheritance and magic methods.
 
 ## New commands / functions used:
-``gcc``
+None
 
 ## Helpful Links
-* [link](https://docs.python.org/3.4/tutorial/classes.html#inheritance)
-* [link](https://docs.python.org/3.4/tutorial/classes.html#multiple-inheritance)
+* [Python Docs: Inheritance](https://docs.python.org/3.4/tutorial/classes.html#inheritance)
+* [Python Docs: Multiple Inheritance](https://docs.python.org/3.4/tutorial/classes.html#multiple-inheritance)
 * [link](https://www.packtpub.com/books/content/inheritance-python)
 * [link](https://www.youtube.com/watch?v=d8kCdLCi6Lk)
 
