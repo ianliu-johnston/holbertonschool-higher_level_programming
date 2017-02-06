@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-def is_same_class(obj, a_class):
-    return (0)
-print(is_same_class(obj, a_class))
+class MyList(list):
+    def print_sorted(self):
+        print (sorted(self))
