@@ -59,4 +59,5 @@ Adds all arguments to a Python list then saves them to a file.
 <h6>101-stats.py</h6>
 
 <h6>read_write_heap.py</h6>
-
+* [Reading from the file /var/<pid>/maps](http://stackoverflow.com/questions/1401359/understanding-linux-proc-id-maps)
+* [Attach a process with ptrace](http://unix.stackexchange.com/questions/6267/how-to-re-load-all-running-applications-from-swap-space-into-ram/6271#6271)
