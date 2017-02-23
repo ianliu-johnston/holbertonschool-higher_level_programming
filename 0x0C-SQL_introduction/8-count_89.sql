@@ -1,2 +1,2 @@
 -- counts number of occurrences
-SELECT COUNT(*) FROM first_table WHERE id(98);
+SELECT COUNT(98) FROM first_table WHERE id = 98;
