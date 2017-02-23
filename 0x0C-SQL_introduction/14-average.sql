@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-#DESCRIPTION OF FUNCTIONALITY
+-- Calculates average of a column.
+SELECT AVG(score) FROM second_table;
