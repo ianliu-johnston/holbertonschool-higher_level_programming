@@ -15,6 +15,7 @@ Continuing SQL introduction
 * [SQL Technique: join types](http://www.tomjewett.com/dbdesign/dbdesign.php?page=jointypes.php)
 * [SQL Technique: union and minus](http://www.tomjewett.com/dbdesign/dbdesign.php?page=setops.php)
 * [SQL Syntax reference](https://dev.mysql.com/doc/refman/5.7/en/sql-syntax.html)
+* [Install MySQL in a Docker Instance](https://github.com/mysql/mysql-docker) -- Command: ``sudo docker run --name mysql_hbtn -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql/mysql-server:5.7``
 
 ## Description of Files
 All scripts
