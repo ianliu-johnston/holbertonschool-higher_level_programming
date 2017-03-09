@@ -10,14 +10,21 @@ Python, meet SQL.
 * [Tutorial for sqlalchemy](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
 * [Docs for sqlalchemy](http://docs.sqlalchemy.org)
 * [Github repository for mysqlclient](https://github.com/PyMySQL/mysqlclient-python)
+* [Docker container with mysql setup on ubuntu:14.04](https://hub.docker.com/r/sameersbn/mysql/#creating-user-and-database-at-launch)
+* [Github for the Docker container mentioned above](https://github.com/sameersbn/docker-mysql)
 
 ## Description of Files
+<h6>Dockerfile</h6>
+Dockerfile that sets up python3 modules with sameersbn/mysql:latest as a base image
+
 <h6>0-select_states.py</h6>
 Lists all states from the database hbtn_0e_0_usa. Takes in 3 arguments, mysql username, password, and database name.
 
 <h6>1-filter_states.py</h6>
+Similar to task 0, but filter all results that start with 'N'
 
 <h6>2-my_filter_states.py</h6>
+Accepts one more argument, where the fourth argument is a query to be matched
 
 <h6>3-my_safe_filter_states.py</h6>
 
