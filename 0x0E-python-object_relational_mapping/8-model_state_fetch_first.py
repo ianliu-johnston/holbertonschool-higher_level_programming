@@ -21,7 +21,6 @@ if __name__ == "__main__":
     connection = engine.connect()
     states = engine.execute("""
         SELECT * FROM states
-        ORDER BY states.id ASC
     """)
     print ("{:d}: {:s}".format(states[0][0], states[0][1]))
     connection.close()
