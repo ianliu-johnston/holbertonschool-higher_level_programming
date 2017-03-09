@@ -26,4 +26,3 @@ if __name__ == "__main__":
     session.add(new)
     session.commit()
     print(new.id)
-    session.close()
