@@ -3,7 +3,6 @@
 
 if __name__ == "__main__":
     import sqlalchemy
-    from sqlalchemy import create_engine
     from model_state import Base, State
     from sys import argv, exit
 
@@ -13,11 +12,9 @@ if __name__ == "__main__":
 
     usr, pwd, dbe = argv[1], argv[2], argv[3]
 
-    eng = "mysql+mysql://" + usr + ":" + pwd + "@localhost:3306/" + dbe
-    print(eng)
+    eng = "mysql://" + usr + ":" + pwd + "@localhost:3306/" + dbe
     try:
-        engine = create_engine("mysql+mysql://{}:{}@localhost:3306/{}"
-                .format(usr, pwd, dbe))
+        engine = sqlalchemy.create_engine(eng)
     except Exception as err:
         print(err)
         exit(1)
@@ -26,7 +23,5 @@ if __name__ == "__main__":
         SELECT * FROM states
         ORDER BY states.id ASC
     """)
-    print ("\n".join(["{:d}: {:s}".format(row[0], row[1]) for row in st
-ates]))
+    print("\n".join(["{:d}: {:s}".format(row[0], row[1]) for row in states]))
     connection.close()
-
