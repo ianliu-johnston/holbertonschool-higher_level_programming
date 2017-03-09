@@ -13,6 +13,7 @@ Python, meet SQL.
 * [Docker container with mysql setup on ubuntu:14.04](https://hub.docker.com/r/sameersbn/mysql/#creating-user-and-database-at-launch)
 * [Github for the Docker container mentioned above](https://github.com/sameersbn/docker-mysql)
 * [MySQL for Python, Albert Lukaszewski, 2010, Packt Publishing](https://www.packtpub.com/big-data-and-business-intelligence/mysql-python)
+* [sqlalchemy docs on Session](http://docs.sqlalchemy.org/en/latest/orm/session.html)
 
 ## Description of Files
 <h6>Dockerfile</h6>
