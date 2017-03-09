@@ -23,5 +23,8 @@ if __name__ == "__main__":
         SELECT * FROM states
         ORDER BY states.id ASC
     """)
-    print("\n".join(["{:d}: {:s}".format(row[0], row[1]) for row in states]))
+    if states is None:
+        print("Error: No database entries")
+    else:
+        print("\n".join(["{:d}: {:s}".format(row[0], row[1]) for row in states]))
     connection.close()
