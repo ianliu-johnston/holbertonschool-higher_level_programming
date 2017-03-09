@@ -3,6 +3,7 @@
 
 if __name__ == "__main__":
     import sqlalchemy
+    from sqlalchemy.orm import sessionmaker
     from model_state import Base, State
     from sys import argv, exit
 
@@ -18,10 +19,10 @@ if __name__ == "__main__":
     except Exception as err:
         print(err)
         exit(1)
-    connection = engine.connect()
-    states = engine.execute("""
-        SELECT * FROM states
-    """)
-    print ("{:d}: {:s}".format(states[0][0], states[0][1]))
-    connection.close()
-
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    states = session.query(State.id, State.name).first()
+    if states is None:
+        print ("Nothing")
+    else:
+        print ("{:d}: {:s}".format(states[0], states[1]))
