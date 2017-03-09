@@ -12,6 +12,7 @@ Python, meet SQL.
 * [Github repository for mysqlclient](https://github.com/PyMySQL/mysqlclient-python)
 * [Docker container with mysql setup on ubuntu:14.04](https://hub.docker.com/r/sameersbn/mysql/#creating-user-and-database-at-launch)
 * [Github for the Docker container mentioned above](https://github.com/sameersbn/docker-mysql)
+* [MySQL for Python, Albert Lukaszewski, 2010, Packt Publishing](https://www.packtpub.com/big-data-and-business-intelligence/mysql-python)
 
 ## Description of Files
 <h6>Dockerfile</h6>
@@ -27,10 +28,16 @@ Similar to task 0, but filter all results that start with 'N'
 Accepts one more argument, where the fourth argument is a query to be matched
 
 <h6>3-my_safe_filter_states.py</h6>
+Protect queries against SQL injection
 
 <h6>4-cities_by_state.py</h6>
+List all cities from the database hbtn_0e_4_usa. Similar to task 0.
 
 <h6>5-filter_cities.py</h6>
+Finds a user defined state and lists all cities for that state.
+
+<h6>model_state.py</h6>
+Class definition for state objects
 
 <h6>7-model_state_fetch_all.py</h6>
 
@@ -48,9 +55,4 @@ Accepts one more argument, where the fourth argument is a query to be matched
 
 <h6>14-model_city_fetch_by_state.py</h6>
 
-<h6>100-relationship_states_cities.py</h6>
-
-<h6>101-relationship_states_cities_list.py</h6>
-
-<h6>102-relationship_cities_states_list.py</h6>
-
+<h6>model_city.py</h6>
