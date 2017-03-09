@@ -20,7 +20,7 @@ if __name__ == "__main__":
         exit(1)
     cursor = database.cursor()
     cursor.execute("""
-        SELECT cities.id, cities.name, states.id
+        SELECT cities.id, cities.name, states.name
         FROM cities
         JOIN states
         WHERE cities.state_id = states.id
