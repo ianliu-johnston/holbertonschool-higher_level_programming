@@ -25,11 +25,5 @@ if __name__ == "__main__":
     new = State(name="Lousiana")
     session.add(new)
     session.commit()
-    states = engine.execute("""
-            SELECT * FROM states
-            ORDER BY states.id ASC
-    """)
-    print("\n".join(["{:d}: {:s}".format(row[0], row[1]) for row in sta
-tes]))
+    print(new.id)
     session.close()
-
