@@ -19,7 +19,13 @@ if __name__ == "__main__":
         print(err)
         exit(1)
     cursor = database.cursor()
-    cursor.execute("SELECT * FROM cities ORDER BY cities.id ASC")
+    cursor.execute("""
+        SELECT cities.id, cities.name, states.id
+        FROM cities
+        JOIN states
+        WHERE cities.state_id = states.id
+        ORDER BY cities.id ASC
+    """)
     for row in cursor.fetchall():
         print(row)
     cursor.close()
