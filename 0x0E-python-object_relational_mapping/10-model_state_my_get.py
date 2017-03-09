@@ -27,6 +27,5 @@ if __name__ == "__main__":
     if query.first() is None:
         print("Not Found")
     else:
-        for rows in session.query(State).filter_by(name=sch):
-            print("{:d}".format(rows.id))
+        print("{:d}".format(query[0].id))
     session.close()
