@@ -13,12 +13,17 @@ if __name__ == "__main__":
     pwd = argv[2]
     dbe = argv[3]
 
-    database = MySQLdb.Connect(user=usr, passwd=pwd, db=dbe, port=3306)
+    try:
+        database = MySQLdb.Connect(user=usr, passwd=pwd, db=dbe, port=3306)
+    except Exception as err:
+        print(err)
+        exit(1)
     cursor = database.cursor()
     cursor.execute("""
         SELECT * FROM states WHERE states.name LIKE 'N%'
         ORDER BY states.id ASC
     """)
-    states = cursor.fetchall()
-    for row in states:
+    for row in cursor.fetchall():
         print(row)
+    cursor.close()
+    db.close()
