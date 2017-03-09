@@ -23,6 +23,6 @@ if __name__ == "__main__":
     session = Session()
     states = session.query(State.id, State.name).first()
     if states is None:
-        print ("Nothing")
+        print("Nothing")
     else:
-        print ("{:d}: {:s}".format(states[0], states[1]))
+        print("{:d}: {:s}".format(states[0], states[1]))
