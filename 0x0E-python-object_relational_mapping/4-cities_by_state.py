@@ -5,7 +5,7 @@ if __name__ == "__main__":
     import MySQLdb
     from sys import argv, exit
 
-    if len(argv) != 5:
+    if len(argv) != 4:
         print("Usage: ./4.py <username> <password> <database>")
         exit(1)
 
@@ -19,7 +19,7 @@ if __name__ == "__main__":
         print(err)
         exit(1)
     cursor = database.cursor()
-    cur.execute("SELECT * FROM cities ORDER BY cities.id ASC")
+    cursor.execute("SELECT * FROM cities ORDER BY cities.id ASC")
     for row in cursor.fetchall():
         print(row)
     cursor.close()
