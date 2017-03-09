@@ -1,18 +1,19 @@
 #Holberton School - 0x0E-python-object_relational_mapping
-Description
+Python, meet SQL. 
 
 ## New commands / functions used:
-``gcc``
+``sqlalchemy``, ``MySQLdb``
 
 ## Helpful Links
-* [link](https://www.fullstackpython.com/object-relational-mappers-orms.html)
-* [link](https://mysqlclient.readthedocs.io/en/latest/index.html)
-* [link](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
-* [link](http://docs.sqlalchemy.org)
-* [link](https://github.com/PyMySQL/mysqlclient-python)
+* [Fullstack Python: ORMS](https://www.fullstackpython.com/object-relational-mappers-orms.html)
+* [Read the docs for mysqlclient Python Module](https://mysqlclient.readthedocs.io/en/latest/index.html)
+* [Tutorial for sqlalchemy](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
+* [Docs for sqlalchemy](http://docs.sqlalchemy.org)
+* [Github repository for mysqlclient](https://github.com/PyMySQL/mysqlclient-python)
 
 ## Description of Files
 <h6>0-select_states.py</h6>
+Lists all states from the database hbtn_0e_0_usa. Takes in 3 arguments, mysql username, password, and database name.
 
 <h6>1-filter_states.py</h6>
 
