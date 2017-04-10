@@ -1,3 +1,3 @@
 #!/bin/bash
 # displays request body only on status code 200
-curl -L $1
+curl -X GET -L $1
