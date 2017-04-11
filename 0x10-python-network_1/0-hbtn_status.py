@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """
-Fetches a status with urllib
+Fetches a website URI with urllib
 """
 import urllib.request
 
 
-req = 'https://intranet.hbtn.io/status'
-with urllib.request.urlopen(req) as response:
-    html = response.read()
-print(
-        "Body Response:\n\t- type:  {}\n\t- content: {}\n\t- utf8 content: {}".format(
-            type(html), html, html.decode('utf-8'))
-     )
+if __name__ == "__main__":
+    req = 'https://intranet.hbtn.io/status'
+    with urllib.request.urlopen(req) as response:
+        html = response.read()
+    print("""Body Response:
+    - type:  {}
+    - content: {}
+    - utf8 content: {}""".format(type(html), html, html.decode('utf-8')))
