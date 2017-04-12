@@ -10,5 +10,6 @@ if __name__ == "__main__":
         req = requests.get(
                 "https://api.github.com/user/hbtncorrectionuser",
                 auth=HTTPBasicAuth("hbtncorrectionuser", "hbtncorrectionpwd"))
+        print(req.json()['id'])
     else:
         print("None")
