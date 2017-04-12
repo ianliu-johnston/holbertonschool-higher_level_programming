@@ -1,4 +1,13 @@
 #!/usr/bin/python3
-REPLACE
-    return (0)
-print(REPLACE)
+"""
+Post some headers
+"""
+import urllib
+import sys
+
+
+if __name__ == "__main__":
+    data = urllib.parse.urlencode({'email': argv[2]}).encode('utf-8')
+    req = urllib.request.Request(sys.argv[1])
+    with urllib.request.urlopen(req) as response:
+        print(response.read())

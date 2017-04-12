@@ -1,4 +1,10 @@
 #!/usr/bin/python3
-REPLACE
-    return (0)
-print(REPLACE)
+"""
+Does stuff
+"""
+import requests
+import sys
+
+
+if __name__ == "__main__":
+    print("hello")
