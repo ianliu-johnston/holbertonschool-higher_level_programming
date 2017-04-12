@@ -8,11 +8,12 @@ import sys
 
 if __name__ == "__main__":
     names = []
-    i = 0
     url = "https://swapi.co/api/people/"
     req = requests.get(url, params={'search': sys.argv[1]})
-    for i in range(len(req.json()['results'])):
-        names.append(req.json()['results'][i]['name'])
-    print("Number of result: {:d}\n{}".
-          format(i, "\n".join(names)),
-          end="" if i == 0 else "\n")
+    res = req.json()['results']
+    num_results = len(res)
+    print("Number of result: {:d}".format(num_results))
+    if num_results > 0:
+        for i in range(0, num_results):
+            names.append(res[i]['name'])
+        print("{}".format("\n".join(names)))
