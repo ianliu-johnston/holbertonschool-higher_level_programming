@@ -6,7 +6,7 @@ import requests
 import sys
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     url = "https://swapi.co/api/people/"
     req = requests.get(url, params={'search': sys.argv[1]})
     names = []
