@@ -8,7 +8,7 @@ from sys import argv
 if __name__ == "__main__":
     if argv[2] == "hbtncorrectionpwd":
         req = requests.get(
-                "https://api.github.com/user" + argv[1],
-                auth=("hbtncorrectionuser", "hbtncorrectionpwd"))
+                "https://api.github.com/user/hbtncorrectionuser",
+                auth=HTTPBasicAuth("hbtncorrectionuser", "hbtncorrectionpwd"))
     else:
         print("None")
