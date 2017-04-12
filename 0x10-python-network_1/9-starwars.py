@@ -12,4 +12,4 @@ if __name__=="__main__":
     names = []
     for i in range(len(req.json()['results'])):
         names.append(req.json()['results'][i]['name'])
-    print("Number of result: {:d}\n{}".format(i, "\n".join(names)))
+    print("Number of result: {:d}\n{}".format(i + 1, "\n".join(names)))
