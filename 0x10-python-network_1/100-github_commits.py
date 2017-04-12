@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Documentation
+Gets the last 10 commits from a specific repo, with the hashsum and name.
 """
 import requests
 from sys import argv
