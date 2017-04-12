@@ -6,7 +6,7 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    if sys.argv[2] == "hbtncorrectionpwd":
+    if sys.argv[2] == "correctpwd1":
         print("27247273")
     else:
         print("None")
