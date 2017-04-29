@@ -1,21 +1,37 @@
 #Holberton School - 0x12-javascript-web_scraping
-Description
-
-## New commands / functions used:
-``gcc``
+Basics of object oriented in javascript, classes, geared towards web-scraping.
 
 ## Helpful Links
-* [link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
-* [link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
-* [link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
-* [link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
-* [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
-* [link](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+* [JS Basics of objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+* [JS Object Oriented JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
+* [JS Object Prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+* [JS Inheritance](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
+* [JS Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+* [JS Working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+* [JS Style standards](https://standardjs.com/rules.html)
+* [JS Style Guide from the real AirBnB](https://github.com/airbnb/javascript)
+
+## Dependencies
+
+Nodejs:
+```
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+Nodejs Modules:
+```
+sudo npm install semistandard --global
+sudo npm install request --global
+export NODE_PATH=/usr/lib/node_modules
+```
 
 ## Description of Files
 <h6>0-rectangle.js</h6>
+Basic rectangle class
 
 <h6>1-rectangle.js</h6>
+
 
 <h6>2-rectangle</h6>
 
