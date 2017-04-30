@@ -6,7 +6,7 @@ module.exports.Rectangle = function Rectangle (w, h) {
     this.height = h;
   }
   this.print = function () {
-    console.log(Array(this.size + 1).join(Array(this.size + 1).join('X') + '\n').slice(0, -1));
+    console.log(Array(this.height + 1).join(Array(this.width + 1).join('X') + '\n').slice(0, -1));
   };
   this.double = function () {
     this.width *= 2;
