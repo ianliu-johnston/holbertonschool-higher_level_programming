@@ -79,18 +79,25 @@ Toggles between two classes on clicks.
 Addes list items to an unordered list
 
 <h6>20-script.js</h6>
+Changes the text of the header tag
 
 <h6>21-script.js</h6>
+Gets the resource and parses the json from a API call.
 
 <h6>22-script.js</h6>
+Updates an unordered list with the results from an API call.
 
 <h6>23-script.js</h6>
+Updates a div tag with the results from an API call.
 
 <h6>100-script.js</h6>
+Changes the color of the header tag when the document is loaded.
 
 <h6>101-script.js</h6>
+Uses divs as buttons to add items to an unordered list, delete the last item added, or clear all items.
 
 <h6>102-script.js</h6>
+Displays windspeed for user-searched city.
 
 <h6>103-script.js</h6>
-
+Same as 102-script.js, but added functionality to press enter.
