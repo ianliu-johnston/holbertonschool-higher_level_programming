@@ -2,13 +2,13 @@ $(document).ready(function () {
   $('#btn_search').click(function () {
     getWindSpeed($('#city_search').val());
   });
+  $("#city_search").keypress(function (button) {
+    const city = $('#city_search').val();
+    if (button.which === 13 && city) { getWindSpeed(city); }
+    if (!city) { console.log('No Input.'); }
+  });
 });
 
-$(document).keypress(function (button) {
-  const city = $('#city_search').val();
-  if (button.which === 13 && city) { getWindSpeed(city); }
-  if (!city) { console.log('No Input.'); }
-});
 
 function getWindSpeed (city) {
   $.get('https://query.yahooapis.com/v1/public/yql?q=select%20wind%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22:' + encodeURIComponent(city) + '%22)&format=json', function (data) {
