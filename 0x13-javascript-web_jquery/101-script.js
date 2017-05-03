@@ -1,7 +1,8 @@
 $(document).ready(function(){
   let counter = 0;
   $('#add_item').click(function(){
-    $('.my_list').append('<LI>Item' + counter + '</LI>');
+    counter += 1;
+    $('.my_list').append('<LI>Item</LI>');
   });
   $('#remove_item').click(function(){
     $('.my_list li').eq(counter).remove();
