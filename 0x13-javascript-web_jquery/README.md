@@ -2,7 +2,10 @@
 Intro to JQUERY
 
 ## New commands / functions used:
-``semistandard *.js --global $`` -- Check JQUERY style with this command
+* ``semistandard *.js --global $`` -- Check JQUERY style with this command
+* ``document.querySelectorAll('header')`` -- Grabs all tags called header.
+* ``$('header').toggleClass('red')`` -- Turns a class on or off
+* ``$.each(data.results, (key, value) => { $('ul#list').append.$('<li></li>').text(data.results[key].title); } });`` -- operates on each JSON key-value pair.
 
 ## Helpful Links
 * [What is Javascript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
