@@ -1,4 +1,4 @@
-#Holberton School - 0x00-python-hello_world
+# Holberton School - 0x00-python-hello_world
 Introduction to python. Scripting between bash and python3. Setting up python and the very basics.
 
 ## New commands / functions used:
