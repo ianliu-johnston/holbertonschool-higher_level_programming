@@ -21,16 +21,22 @@ Imports the functions from calculator.py and prints math from each of the functi
 Prints the arguments passed into the script.
 
 <h6>3-infinite_add.py</h6>
+Adds all script arguments together.
 
 <h6>4-hidden_discovery.py</h6>
+Prints all directories that start with __
 
 <h6>5-variable_load.py</h6>
+imports a variable from a module
 
 <h6>100-my_calculator.py</h6>
+Basic calculator in Python.
 
 <h6>101-easy_print.py</h6>
+~~~~**H4xx th3 ch3xx0r**~~~~
 
 <h6>102-magic_calculation.py</h6>
+empty
 
 <h6>103-fast_alphabet.py</h6>
-
+Prints the ascii alphabet in uppercase.
