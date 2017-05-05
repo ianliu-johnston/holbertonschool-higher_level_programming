@@ -33,6 +33,7 @@ imports a variable from a module
 Basic calculator in Python.
 
 <h6>101-easy_print.py</h6>
+
 ~~H4xx 7h3 ch3xx0r~~
 
 <h6>102-magic_calculation.py</h6>
