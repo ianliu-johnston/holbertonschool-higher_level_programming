@@ -1,4 +1,4 @@
-#Holberton School - 0x03-python-data_structures
+# Holberton School - 0x03-python-data_structures
 Introduction to tuples and lists.
 
 ## New commands / functions used:
