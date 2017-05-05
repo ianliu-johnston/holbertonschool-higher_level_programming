@@ -1,4 +1,4 @@
-#Holberton School - 0x05-python-exceptions
+# Holberton School - 0x05-python-exceptions
 All about handling exceptions.
 
 ## New commands / functions used:
@@ -42,6 +42,7 @@ Prints an integer with Error handling to stderr.
 
 <h6>102-magic_calculation.py</h6>
 Write a function that disassembles to exactly this:
+
 ```
   3           0 LOAD_CONST               1 (0)
               3 STORE_FAST               2 (result)
