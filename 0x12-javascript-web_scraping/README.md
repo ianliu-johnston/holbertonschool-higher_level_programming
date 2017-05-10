@@ -1,6 +1,9 @@
 #Holberton School - 0x12-javascript-web_scraping
 Basics of object oriented in javascript, classes, geared towards web-scraping.
 
+## New Methods
+* ``Object.prototype.property``
+
 ## Helpful Links
 * [JS Basics of objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
 * [JS Object Oriented JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)

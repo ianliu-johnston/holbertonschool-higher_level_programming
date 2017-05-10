@@ -1,4 +1,4 @@
-#Holberton School - 0x01-python-if_else_loops_functions
+# Holberton School - 0x01-python-if_else_loops_functions
 Using loops, conditionals, formatting, and functions
 
 ## New commands / functions used:
@@ -63,6 +63,7 @@ Removes a character from the string at position n.
 
 <h6>102-magic_calculation.py</h6>
 Write a function that disassembles to this:
+
 ```
   3           0 LOAD_FAST                0 (a)
               3 LOAD_FAST                1 (b)

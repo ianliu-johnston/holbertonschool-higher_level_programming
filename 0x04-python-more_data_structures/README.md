@@ -1,4 +1,4 @@
-#Holberton School - 0x04-python-more_data_structures
+# Holberton School - 0x04-python-more_data_structures
 All about datastructures in python.
 
 ## New commands / functions used:

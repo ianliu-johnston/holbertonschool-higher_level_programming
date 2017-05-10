@@ -1,6 +1,12 @@
 #Holberton School - 0x11-javascript-warm_up
 Introduction to Javascript
 
+## New Methods and strucutres
+* ``for i in array`` -- returns index,
+* ``for i of array`` -- returns value of array item
+* ``array.forEach()`` -- applies a method on each item in the array
+* ``console.log("hello").repeat``
+
 ## Helpful Links
 * [Javascript Fundamentals](https://docs.microsoft.com/en-us/scripting/javascript/javascript-fundamentals)
 * [Writing JS Code](https://docs.microsoft.com/en-us/scripting/javascript/writing-javascript-code)

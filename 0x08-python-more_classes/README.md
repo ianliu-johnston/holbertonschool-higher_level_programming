@@ -1,4 +1,4 @@
-#Holberton School - 0x08-python-more_classes
+# Holberton School - 0x08-python-more_classes
 Continuing introduction to Object Oriented Programming in Python. This project is cumulative, so tasks must be done in order.
 
 ## New commands / functions used:

@@ -1,4 +1,4 @@
-#Holberton School - 0x00-python-hello_world
+# Holberton School - 0x00-python-hello_world
 Introduction to python. Scripting between bash and python3. Setting up python and the very basics.
 
 ## New commands / functions used:
@@ -55,7 +55,9 @@ Write a script that compiles a Python script file. The Python file name will be 
 The output file name is ``$PYFILEc`` (ex: ``PYFILE=my_main.py`` => ``my_main.pyc``)
 
 <h6>102-magic_calculation.py</h6>
+
 Write the python function ``def magic_calculation(a, b):`` that does exactly as the following Python bytecode:
+
 ```
   3           0 LOAD_CONST               1 (98)
               3 LOAD_FAST                0 (a)
@@ -63,5 +65,4 @@ Write the python function ``def magic_calculation(a, b):`` that does exactly as 
               9 BINARY_POWER
              10 BINARY_ADD
              11 RETURN_VALUE
-
 ```
